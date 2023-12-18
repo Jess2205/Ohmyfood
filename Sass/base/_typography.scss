@@ -1,0 +1,15 @@
+* {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    line-height: normal;
+  }
+  
+  :root {
+    --main-color: #9356DC;
+    --main-bg-color: #f2f2f2;
+    --filter-bg-color: #deebff;
+  }
+  
+  .fa-solid {
+    color: var(--main-color);
+  }
