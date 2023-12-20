@@ -1,23 +1,82 @@
 .fa-location-dot {
     display: flex;
-    width: 15%;
-    background-color: var(--grey, #f2f2f2);
+    width: 10%;   
     justify-content: center;
     color: black;
-    align-items: center;
-    border: 1px #f2f2f2;
-    border-radius: 15px 0px 0px 15px;
-    -webkit-border-radius: 15px 0px 0px 15px;
-    -moz-border-radius: 15px 0px 0px 15px;
-    -ms-border-radius: 15px 0px 0px 15px;
-    -o-border-radius: 15px 0px 0px 15px;
-    padding: 20px;
-    font-size: 18px;
+    align-items: center;    
+    padding: 10px;
+    padding-left: 30px;
+    
+    
   }
+
   abbr {
     border: none;
   }
+
+  .fa-mobile-screen-button, .fa-list, .fa-store {
+    height: 72.38px;
+    display: flex;
+    text-align: left;
+    padding-left: 30px;    
+    align-items: center;
+    border-radius: 20px;
+    color:#7E7E7E;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    width: 78%;
+    margin-left: 20px;
+    background: #F6F6F6;
+    box-shadow: 0px 4px 15px 0px #00000026;
+    margin-bottom: 15px;
+    z-index: 1;   
+  }
+
+  .fa-store {
+    color: #9356DC;
+  }
+
+  .icone-txt {
+    color: black;    
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left; 
+   
+  }  
+  
+  .ellipse {
+    width: 24px;
+    height: 24px;   
+    background-color:#9356DC;
+    color:#FFFFFF;    
+    border-radius:50%;
+    -webkit-border-radius:50%;
+    -moz-border-radius:50%;
+    -ms-border-radius:50%;
+    -o-border-radius:50%;   
+    align-items: center;
+    text-align: center; 
+    position: absolute;
+    margin-top: 24px;
+    margin-bottom: 24px;
+    margin-left: 10px;   
+  }
+
+  .numero {   
+    position : absolute;
+    margin : 2px;
+    padding-left : 5px;    
+  }
+
+  
  
+
+  
   
   
   
