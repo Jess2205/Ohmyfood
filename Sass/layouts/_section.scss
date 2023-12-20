@@ -51,13 +51,24 @@ body {
     -ms-border-radius: 20px 20px 0px 0px;
     -o-border-radius: 20px 20px 0px 0px;
     object-fit: cover;
+    position: relative;
    
   }
 
   
-
+  .image-txt {
+    position: absolute;
+    z-index: 1;
+    margin: 2px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
   
-
+  .carte-txt {
+    padding-left: 10px;
+    
+  }
   
   
 

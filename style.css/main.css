@@ -453,15 +453,7 @@ nav {
   width: 100%;
 }
 
-.image-txt {
-  position: absolute;
-  z-index: 1;
-  top: 50%;
-  left: 50%;
-  color: white;
-  font-size: 20px;
-  font-weight: bold;
-}
+
 
 .cartes {
   display: flex;
@@ -469,10 +461,7 @@ nav {
   gap: 18px;
 }
 
-.carte-txt {
-  padding-left: 10px;
-  position: relative;
-}
+
 
 .carte-title {
   margin-bottom: 0;
