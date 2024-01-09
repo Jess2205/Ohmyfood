@@ -450,16 +450,22 @@ nav {
   -moz-border-radius: 20px 20px 0px 0px;
   -ms-border-radius: 20px 20px 0px 0px;
   -o-border-radius: 20px 20px 0px 0px;
-  object-fit: fill;
-  position: relative;
-  
+  object-fit: cover;
 }
 
+.image-container {
+  width: 100%;
+}
 
-
-
-
-
+.image-txt {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
 
 .cartes {
   display: flex;
@@ -468,7 +474,6 @@ nav {
 }
 
 .carte-txt {
-  
   padding-left: 10px;
   position: relative;
 }

@@ -52,35 +52,14 @@ body {
     -moz-border-radius: 20px 20px 0px 0px;
     -ms-border-radius: 20px 20px 0px 0px;
     -o-border-radius: 20px 20px 0px 0px;
-    object-fit: fill;
-    position: relative;
-    padding-bottom: 10px;
-    
+    object-fit: cover;
+   
   }
+
   
 
-  .image-txt {
-    width: 20%;
-    border: 1px;
-    background-color:#99E2D0;
-    color:#008766;
-    padding: 7px 9px; 
-    position: absolute;
-    z-index: 1;
-    top: 5%;
-    left: 70%;
-   
-  }
+  
 
-  .carte {
-    display: flex;
-    flex-direction: column;
-    height: 230px;
-   
-    background-color: white;
-    border-radius: 20px;
-    -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  }
   
   
 
