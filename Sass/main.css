@@ -72,7 +72,8 @@ a {
 abbr[title] {
   border-bottom: none; /* 1 */
   text-decoration: underline; /* 2 */
-  text-decoration: underline dotted; /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; /* 2 */
 }
 
 /**
@@ -351,14 +352,14 @@ a {
   text-decoration: none;
 }
 
-.carte {
+.lapalette {
+  width: 100%;
+}
+
+.logopages {
   display: flex;
-  flex-direction: column;
-  height: 220px;
- 
-  background-color: white;
-  border-radius: 20px;
-  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  justify-content: center;
+  align-items: center;
 }
 
 .search-bar {
@@ -376,6 +377,7 @@ a {
   align-items: center;
   width: 50%;
   padding-left: 79px;
+  
 }
 
 .sub-title {
@@ -401,12 +403,6 @@ body {
   justify-content: center;
   width: 100%;
   position: relative;
-}
-
-.section-title {
-  margin: 0;
-  font-size: 22px;
-  color: #000;
 }
 
 nav {
@@ -450,16 +446,32 @@ nav {
   -moz-border-radius: 20px 20px 0px 0px;
   -ms-border-radius: 20px 20px 0px 0px;
   -o-border-radius: 20px 20px 0px 0px;
-  object-fit: fill;
+  -o-object-fit: fill;
+     object-fit: fill;
   position: relative;
-  
+  padding-bottom: 10px;
 }
 
+.image-txt {
+  width: 20%;
+  border: 1px;
+  background-color: #99E2D0;
+  color: #008766;
+  padding: 7px 9px;
+  position: absolute;
+  z-index: 1;
+  top: 5%;
+  left: 70%;
+}
 
-
-
-
-
+.carte {
+  display: flex;
+  flex-direction: column;
+  height: 230px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}
 
 .cartes {
   display: flex;
@@ -468,13 +480,13 @@ nav {
 }
 
 .carte-txt {
-  
   padding-left: 10px;
   position: relative;
+  padding-bottom: 10px;
 }
 
 .carte-title {
-  margin-bottom: 0;
+  margin-top: 0;
   font-size: 18px;
   font-weight: 700;
   line-height: 21px;
@@ -503,7 +515,6 @@ b {
   letter-spacing: 0em;
   text-align: left;
   color: #FFFFFF;
- 
 }
 
 .links {
@@ -513,6 +524,119 @@ b {
   text-align: start;
   padding-left: 20px;
   width: 80%;
+}
+
+.footer-title {
+  color: #f2f2f2;
+  background-color: #353535;
+}
+
+.fa-utensils, .fa-handshake-simple {
+  color: #FFFFFF;
+  height: 13px;
+  margin-right: 10px;
+}
+
+.lacarte {
+  background: rgb(246, 246, 246);
+  border-radius: 25px 25px 0px 0px;
+  -webkit-border-radius: 25px 25px 0px 0px;
+  -moz-border-radius: 25px 25px 0px 0px;
+  -ms-border-radius: 25px 25px 0px 0px;
+  -o-border-radius: 25px 25px 0px 0px;
+  padding: 10px;
+}
+
+.titre_lacarte_coeur {
+  position: relative;
+}
+
+.titre_lacarte {
+  font-family: "Shrikhand";
+  font-size: 22px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-top: 10px;
+  position: relative;
+}
+
+.entrees, .plats, .desserts {
+  padding-bottom: 10px;
+}
+
+.subtitle_lacarte {
+  font-family: "Roboto";
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: 3px solid rgb(153, 226, 208);
+  width: 10%;
+  height: 23px;
+  padding-top: 10px;
+}
+
+.menu {
+  border: 2px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin: 0;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+}
+
+.titre_menus {
+  font-size: 1em;
+  font-weight: 700;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.subtitle_menus {
+  font-size: 0.75em;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+}
+
+.prix {
+  margin: 0;
+  font-weight: 700;
+  position: relative;
+  text-align: end;
+  position: absolute;
+  left: 260px;
+  top: 35px;
+}
+
+.euros {
+  font-weight: 700;
+}
+
+.commander {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+::-moz-placeholder {
+  color: var(--Black, #000);
+  text-align: left;
+  width: 100%;
+  padding-left: 5px;
 }
 
 ::placeholder {
@@ -586,7 +710,6 @@ abbr {
   color: #9356DC;
 }
 
-
 .icone-txt {
   color: black;
   padding-left: 20px;
@@ -622,26 +745,18 @@ abbr {
 }
 
 .fa-heart {
- position: absolute;
- z-index: 1;
- top: 10%;
- left: 80%;
+  position: absolute;
+  z-index: 1;
+  top: 10%;
+  left: 80%;
+}
+
+.fa-left-long {
+  color: black;
 }
 
 input {
   border: none;
   justify-content: center;
   background-color: #EAEAEA;
-}
-
-.footer-title {
-  color: #f2f2f2;
-  background-color: #353535;
-}
-
-.fa-utensils, .fa-handshake-simple {
-  color:#FFFFFF; 
-  height: 13px;
-  margin-right: 10px;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */

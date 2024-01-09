@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&amp;family=Raleway&amp;family=Shrikhand&amp;display=swap&amp;_cacheOverride=1702719730117" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css?_cacheOverride=1702719730117" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="style.css/main.css">
+    <link rel="stylesheet" href="Sass/main.css">
 </head>
 <body>
     <div class="main-container">
@@ -56,30 +56,29 @@
             <div class="cartes">
                 <a href="#">
                     <article class="carte">
-                        <div class="image-container">
-                            <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image d'un plat rond">
-                            <div class="image-txt">Nouveau</div>
-                        </div>
+                        <div class="image-container">                        
+                        <img src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Image d'un plat rond">                       
+                        <span class="image-txt">Nouveau</span>                       
                         <div class="carte-txt">    
                             <h3 class="carte-title">La palette du goût</h3>
                             <p class="carte-subtitle">Ménilmontant</p>                            
-                            <i class="fa fa-heart fa-2x" aria-hidden="true"></i>
-                                                       
+                            <div class="coeur1">
+                                <i class="fa-regular fa-heart fa-2x" aria-hidden="true"></i>
+                            </div>                           
                         </div>
                     </article>
                 </a>
                 <a href="#">
                     <article class="carte">
                         <div class="image-container">
-                            <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image d'un plat rond">
-                            <div class="image-txt">Nouveau</div>
-                        </div>
+                        <img src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Image d'un plat rond">
+                        <span class="image-txt">Nouveau</span>                     
                         <div class="carte-txt">    
                             <h3 class="carte-title">La note enchantée</h3>
                             <p class="carte-subtitle">Charonne</p>
-                            <div class="coeur1">
+                            <div class="coeur1">                                                      
                                 <i class="fa-solid fa-heart fa-2x" aria-hidden="true"></i>
-                            </div> 
+                            </div>
                         </div>
                     </article>
                 </a>
@@ -111,11 +110,13 @@
         </section>
         </main>
         <footer>
+            <div class="logo_footer">
             <img src="assets/images/logo/ohmyfood@2x.svg" alt="logo">
+            </div>
             <div class="footer-container">
                 <ul class="links">
-                    <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"><b>Proposer un restaurant</b></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-handshake-simple" aria-hidden="true"><b>Devenir partenaire</b></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-utensils" aria-hidden="true"><b> Proposer un restaurant</b></i></a></li>
+                    <li><a href="#"><i class="fa-solid fa-handshake-simple" aria-hidden="true"><b> Devenir partenaire</b></i></a></li>
                     <li><a href="#"><b>Mentions légales</b></a></li>
                     <li><a href="#"><b>Contact</b></a></li>
                 </ul>

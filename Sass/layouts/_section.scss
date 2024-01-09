@@ -42,51 +42,72 @@ body {
   }
   
   .carte img {
-    display: flex;       
+    display: flex;
+    width: 100%;
+    height: 150px;
     justify-content: end;
-    flex-direction: column;    
+    flex-direction: column;
     border-radius: 20px 20px 0px 0px;
     -webkit-border-radius: 20px 20px 0px 0px;
     -moz-border-radius: 20px 20px 0px 0px;
     -ms-border-radius: 20px 20px 0px 0px;
     -o-border-radius: 20px 20px 0px 0px;
-    object-fit: cover;
+    object-fit: fill;
+    position: relative;
+    padding-bottom: 10px;
+    
+  }
+  
+
+  .image-txt {
+    width: 20%;
+    border: 1px;
+    background-color:#99E2D0;
+    color:#008766;
+    padding: 7px 9px; 
+    position: absolute;
+    z-index: 1;
+    top: 5%;
+    left: 70%;
    
   }
 
-  
-
-  
-
+  .carte {
+    display: flex;
+    flex-direction: column;
+    height: 230px;
+   
+    background-color: white;
+    border-radius: 20px;
+    -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
   
   
 
   .cartes {
     display: flex;
     flex-direction: column;
-    gap: 18px;
-   
+    gap: 18px;   
   }
 
+ 
   
+
   .carte-txt {
-    padding-left: 10px; 
-    
-    height: 500px;
-   
-   
-    
+  
+    padding-left: 10px;
+    position: relative;
+    padding-bottom: 10px;
   }
 
 
   .carte-title {
-    
+    margin-top: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: left;
-    position: relative;
+    text-align: left;    
   }
 
   .carte-subtitle {
@@ -95,8 +116,7 @@ body {
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;
-    
+    text-align: left;    
   }
 
   footer {
@@ -123,5 +143,121 @@ body {
    width: 80%;
   }
 
+  .logo_footer {
+    color: #FFFFFF;
+  }
+
+  .footer-title {
+    color: #f2f2f2;
+    background-color: #353535;
+  }
   
+  .fa-utensils, .fa-handshake-simple {
+    color:#FFFFFF; 
+    height: 13px;
+    margin-right: 10px;
+  }
+
+  .lacarte {
+    background: rgba(246, 246, 246, 1);
+    border-radius:25px 25px 0px 0px ;
+    -webkit-border-radius:25px 25px 0px 0px ;
+    -moz-border-radius:25px 25px 0px 0px ;
+    -ms-border-radius:25px 25px 0px 0px ;
+    -o-border-radius:25px 25px 0px 0px ;
+    padding: 10px;
+}
+
+  .titre_lacarte_coeur {
+    
+    position: relative;
+   
+  }
+
+  .titre_lacarte {
+    font-family: "Shrikhand";
+    font-size: 22px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 41px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-top: 10px;
+    position: relative;    
+  }
+
+  .entrees, .plats, .desserts {
+    padding-bottom: 10px;
+  }
+
+  .subtitle_lacarte {
+    font-family: "Roboto";
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    border-bottom: 3px solid rgba(153, 226, 208, 1);
+    width: 10%;
+    height: 23px;
+    padding-top: 10px; 
+  }
+
+
+
+  .menu {
+    border: 2px;
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 20px ;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    margin: 0;
+    gap: 15px;
+    margin-bottom: 20px;
+    padding: 15px;
+    position: relative;
+  }
+
+  .titre_menus {    
+    font-size: 1em;
+    font-weight: 700;
+    line-height: 21px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+   
+   
+    
+  }
+
+  .subtitle_menus {   
+    font-size: 0.750em;
+    font-weight: 300;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 0;
+    
+  }
+
+  .prix {
+    margin: 0;
+    font-weight: 700;
+    position: relative;
+    text-align: end;
+    position: absolute;       
+    left: 260px;
+    top: 35px;
+  }
+
+  .euros {
+    font-weight: 700;
+  }
+
+  .commander {
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
   
