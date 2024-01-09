@@ -82,22 +82,14 @@ body {
       text-align: center;
       background: rgba(153, 226, 208, 1);
       padding: 5px 10px;
-    }
+  }
   
-    
-
-  
-  
-
   .cartes {
     display: flex;
     flex-direction: column;
     gap: 18px;   
   }
   
- 
-  
-
   .carte-txt {
   padding-top: 10px;
     padding-left: 10px;
@@ -152,25 +144,6 @@ body {
   }
 
   
-
-  .footer-title {
-    color: #f2f2f2;
-    background-color: #353535;
-  }
-  
-  .fa-utensils, .fa-handshake-simple, .logofooter-txt {
-    color:#FFFFFF; 
-    height: 13px;
-     }
-
-  .logofooter-txt {
-    margin-left: 10px;
-  }
-    
-  
-   
-  
-
   .lacarte {
     background: rgba(246, 246, 246, 1);
     border-radius:25px 25px 0px 0px ;
@@ -179,12 +152,10 @@ body {
     -ms-border-radius:25px 25px 0px 0px ;
     -o-border-radius:25px 25px 0px 0px ;
     padding: 10px;
-}
+  }
 
   .titre_lacarte_coeur {
-    
     position: relative;
-   
   }
 
   .titre_lacarte {
@@ -213,13 +184,8 @@ body {
     border-bottom: 3px solid rgba(153, 226, 208, 1);
     width: 10%;
     height: 23px;
-    padding-top: 10px; 
-    
-
+    padding-top: 10px;   
   }
-
-  
-
 
   .menu {
     border: 2px;
@@ -242,10 +208,7 @@ body {
     line-height: 21px;
     letter-spacing: 0em;
     text-align: left;
-    margin: 0;
-   
-   
-    
+    margin: 0; 
   }
 
   .subtitle_menus {   
@@ -277,23 +240,10 @@ body {
     padding-bottom: 15px;
   }
 
-  .logo_footer {
-    font-family: Shrikhand;
-    font-size: 18px;
-    font-style: italic;
-    font-weight: 400;
-    line-height: 26px;
-    letter-spacing: 0em;
-    text-align: left;
-    padding-left: 20px;
-    color: rgba(255, 255, 255, 1);
-    
-}
 .carte {
   display: flex;
   flex-direction: column;
   height: 220px;
- 
   background-color: white;
   border-radius: 20px;
   -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
