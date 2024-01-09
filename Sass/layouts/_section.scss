@@ -118,12 +118,6 @@ body {
     
   }
 
-  footer {
-    background: rgba(53, 53, 53, 1);
-    padding-top: 10px;
-    font-size: 18px;     
-  }
-
   b {    
     font-size: 16px;
     font-weight: 500;
@@ -152,6 +146,21 @@ body {
     -ms-border-radius:25px 25px 0px 0px ;
     -o-border-radius:25px 25px 0px 0px ;
     padding: 10px;
+    position: relative;
+  
+    top: 170px;
+    
+   
+   
+  }
+
+  .lapalette, .enchantee {
+    position: absolute;
+  }
+
+  .enchantee {
+    width: 100%;
+    
   }
 
   .titre_lacarte_coeur {
