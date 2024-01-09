@@ -165,9 +165,7 @@ select { /* 1 */
 button,
 [type=button],
 [type=reset],
-[type=submit] {
-  -webkit-appearance: button;
-}
+[type=submit] 
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -249,7 +247,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
-  -webkit-appearance: textfield; /* 1 */
+ 
   outline-offset: -2px; /* 2 */
 }
 
@@ -470,7 +468,7 @@ nav {
   height: 230px;
   background-color: white;
   border-radius: 20px;
-  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+ 
 }
 
 .cartes {
