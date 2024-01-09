@@ -16,6 +16,12 @@ body {
    
   }
 
+  .main-container {
+    width: 100%;
+    max-width: 768.98px;
+    box-sizing: border-box;
+  }
+
   .explorer{
     width: 100%;
     padding-bottom: 30px;
@@ -32,13 +38,17 @@ body {
     padding-bottom: 50px;
   }
 
+  
   .menus {
-    background-color:#F2F4F4;
+    background-color: #F2F4F4;
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 30px;
     padding-bottom: 50px;
-   
+  }
+
+  .section-title3{
+    padding-left: 5px;
   }
   
   .carte img {
@@ -53,12 +63,28 @@ body {
     -ms-border-radius: 20px 20px 0px 0px;
     -o-border-radius: 20px 20px 0px 0px;
     object-fit: cover;
-   
   }
 
   
-
+  .image-txt {
+      position: absolute;
+      z-index: 1;
+      top: 10%;
+      left: 70%;
+      color:rgba(0, 135, 102, 1);
+      font-size: 20px;
+      font-weight: bold;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: center;
+      background: rgba(153, 226, 208, 1);
+      padding: 5px 10px;
+    }
   
+    
 
   
   
@@ -68,12 +94,12 @@ body {
     flex-direction: column;
     gap: 18px;   
   }
-
+  
  
   
 
   .carte-txt {
-  
+  padding-top: 10px;
     padding-left: 10px;
     position: relative;
     padding-bottom: 10px;
@@ -81,6 +107,7 @@ body {
 
 
   .carte-title {
+    margin-bottom: 5px;
     margin-top: 0;
     font-size: 18px;
     font-weight: 700;
@@ -90,16 +117,18 @@ body {
   }
 
   .carte-subtitle {
-    margin: 0;
+    margin-top: 0;
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left;    
+    text-align: left; 
+    
   }
 
   footer {
-    background-color: #353535;
+    background: rgba(53, 53, 53, 1);
+    padding-top: 10px;
     font-size: 18px;     
   }
 
@@ -122,20 +151,25 @@ body {
    width: 80%;
   }
 
-  .logo_footer {
-    color: #FFFFFF;
-  }
+  
 
   .footer-title {
     color: #f2f2f2;
     background-color: #353535;
   }
   
-  .fa-utensils, .fa-handshake-simple {
+  .fa-utensils, .fa-handshake-simple, .logofooter-txt {
     color:#FFFFFF; 
     height: 13px;
-    margin-right: 10px;
+     }
+
+  .logofooter-txt {
+    margin-left: 10px;
   }
+    
+  
+   
+  
 
   .lacarte {
     background: rgba(246, 246, 246, 1);
@@ -180,8 +214,11 @@ body {
     width: 10%;
     height: 23px;
     padding-top: 10px; 
+    
+
   }
 
+  
 
 
   .menu {
@@ -239,4 +276,25 @@ body {
     padding-top: 15px;
     padding-bottom: 15px;
   }
-  
+
+  .logo_footer {
+    font-family: Shrikhand;
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding-left: 20px;
+    color: rgba(255, 255, 255, 1);
+    
+}
+.carte {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+ 
+  background-color: white;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+}

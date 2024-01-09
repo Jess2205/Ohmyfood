@@ -165,7 +165,9 @@ select { /* 1 */
 button,
 [type=button],
 [type=reset],
-[type=submit] 
+[type=submit] {
+  -webkit-appearance: button;
+}
 
 /**
  * Remove the inner border and padding in Firefox.
@@ -247,7 +249,7 @@ textarea {
  * 2. Correct the outline style in Safari.
  */
 [type=search] {
- 
+  -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
 }
 
@@ -375,7 +377,6 @@ a {
   align-items: center;
   width: 50%;
   padding-left: 79px;
-  
 }
 
 .sub-title {
@@ -409,6 +410,12 @@ nav {
   align-items: center;
 }
 
+.main-container {
+  width: 100%;
+  max-width: 768.98px;
+  box-sizing: border-box;
+}
+
 .explorer {
   width: 100%;
   padding-bottom: 30px;
@@ -433,6 +440,10 @@ nav {
   padding-bottom: 50px;
 }
 
+.section-title3 {
+  padding-left: 5px;
+}
+
 .carte img {
   display: flex;
   width: 100%;
@@ -444,31 +455,26 @@ nav {
   -moz-border-radius: 20px 20px 0px 0px;
   -ms-border-radius: 20px 20px 0px 0px;
   -o-border-radius: 20px 20px 0px 0px;
-  -o-object-fit: fill;
-     object-fit: fill;
-  position: relative;
-  padding-bottom: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .image-txt {
-  width: 20%;
-  border: 1px;
-  background-color: #99E2D0;
-  color: #008766;
-  padding: 7px 9px;
   position: absolute;
   z-index: 1;
-  top: 5%;
+  top: 10%;
   left: 70%;
-}
-
-.carte {
-  display: flex;
-  flex-direction: column;
-  height: 230px;
-  background-color: white;
-  border-radius: 20px;
- 
+  color: rgb(0, 135, 102);
+  font-size: 20px;
+  font-weight: bold;
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0em;
+  text-align: center;
+  background: rgb(153, 226, 208);
+  padding: 5px 10px;
 }
 
 .cartes {
@@ -478,12 +484,14 @@ nav {
 }
 
 .carte-txt {
+  padding-top: 10px;
   padding-left: 10px;
   position: relative;
   padding-bottom: 10px;
 }
 
 .carte-title {
+  margin-bottom: 5px;
   margin-top: 0;
   font-size: 18px;
   font-weight: 700;
@@ -493,7 +501,7 @@ nav {
 }
 
 .carte-subtitle {
-  margin: 0;
+  margin-top: 0;
   font-size: 17px;
   font-weight: 300;
   line-height: 20px;
@@ -502,7 +510,8 @@ nav {
 }
 
 footer {
-  background-color: #353535;
+  background: rgb(53, 53, 53);
+  padding-top: 10px;
   font-size: 18px;
 }
 
@@ -529,10 +538,13 @@ b {
   background-color: #353535;
 }
 
-.fa-utensils, .fa-handshake-simple {
+.fa-utensils, .fa-handshake-simple, .logofooter-txt {
   color: #FFFFFF;
   height: 13px;
-  margin-right: 10px;
+}
+
+.logofooter-txt {
+  margin-left: 10px;
 }
 
 .lacarte {
@@ -628,6 +640,27 @@ b {
 .commander {
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.logo_footer {
+  font-family: Shrikhand;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 20px;
+  color: rgb(255, 255, 255);
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  height: 220px;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 ::-moz-placeholder {
