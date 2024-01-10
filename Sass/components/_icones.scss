@@ -85,11 +85,13 @@
     color: black;
   }
 
-  .heart-full {
+  .fa-solid {
     opacity: 0;
+    transition-property: all;
+    transition-delay: 2s;
   }
 
-  .heart-full :hover {
+  .fa-solid :hover {
     opacity: 1;
   }
   
