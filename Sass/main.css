@@ -372,17 +372,25 @@ a {
   text-align: left;
   padding-left: 20px;
   color: rgb(255, 255, 255);
+  margin-top: 0;
 }
 
 footer {
   background: rgb(53, 53, 53);
-  padding-top: 10px;
+  padding-top: 20px;
+  padding-bottom: 10px;
   font-size: 18px;
-  position: absolute;
-  z-index: 1;
+  position: relative;
+}
+
+.footer_restaurants {
+  background: rgb(53, 53, 53);
+  padding-top: 30px;
+  padding-bottom: 10px;
+  font-size: 18px;
+  position: relative;
   width: 100%;
-  height: 200px;
-  bottom: 0;
+  bottom: 27px;
 }
 
 .footer-title {
@@ -571,13 +579,17 @@ b {
   -moz-border-radius: 25px 25px 0px 0px;
   -ms-border-radius: 25px 25px 0px 0px;
   -o-border-radius: 25px 25px 0px 0px;
-  padding: 10px;
+  padding-top: 20px;
+  padding-bottom: 30px;
   position: relative;
-  top: 170px;
+  width: 100%;
+  bottom: 30px;
+  z-index: 1;
 }
 
 .lapalette, .enchantee {
-  position: absolute;
+  position: relative;
+  width: 100%;
 }
 
 .enchantee {
@@ -586,6 +598,7 @@ b {
 
 .titre_lacarte_coeur {
   position: relative;
+  padding-left: 10px;
 }
 
 .titre_lacarte {
@@ -598,10 +611,13 @@ b {
   text-align: left;
   padding-top: 10px;
   position: relative;
+  padding: 10px;
 }
 
 .entrees, .plats, .desserts {
   padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .subtitle_lacarte {
@@ -630,6 +646,8 @@ b {
   margin-bottom: 20px;
   padding: 15px;
   position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
 }
 
 .titre_menus {
