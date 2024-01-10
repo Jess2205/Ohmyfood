@@ -78,16 +78,26 @@
     z-index: 1;
     top: 10%;
     left: 80%;
+       
    }
 
   .fa-left-long {
     color: black;
   }
+
+  .heart-full {
+    opacity: 0;
+  }
+
+  .heart-full :hover {
+    opacity: 1;
+  }
+  
   
   
  
 
-  
+
   
   
   
