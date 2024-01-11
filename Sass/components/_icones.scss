@@ -73,33 +73,34 @@
     padding-left : 5px;    
   }
 
-  .fa-heart {
+  .fa-heart, .empty {
     position: absolute;
     top: 10%;
-    left: 80%;   
-   }
+    left: 80%;
+    color: #FFFFFF;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;   
+    font-size: 1.5em;
+  }
+
+  
+   .coeur1 :hover{
+   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   -moz-background-clip: text;
+   -moz-text-fill-color: transparent;
+   -webkit-text-stroke-color:transparent;
+  
+}
 
   .fa-left-long {
     color: black;
   }
 
-  .fa-solid {
-    color: #FFFFFF;
-    -webkit-text-stroke-width: 2px;
   
-  -webkit-text-stroke-color: black;
-    
-  }
-
  
 
-  .coeur1{
-    color: white;
-    -webkit-text-stroke-width: 2px;
-  
-    -webkit-text-stroke-color: black;
-    
-  }
   
   
   
