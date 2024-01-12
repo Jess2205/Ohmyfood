@@ -106,6 +106,33 @@
   .fa-utensils, .fa-handshake-simple {
     font-size: 12px;
   }
+
+  .fa-check{
+   
+    width: 10px;
+    height: 10px;
+    top: 24.97px;
+    left: 650px;
+    padding: 5px;
+    color:rgba(153, 226, 208, 1);
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    text-align:center;
+    margin-left: 12px;
+    z-index: 1;
+   
+    
+}
+
+  .visible {
+    
+  }
  
   
   

@@ -3,6 +3,8 @@ body {
     justify-content: center;
     width: 100%;
     position: relative;
+    margin-left: 0;
+    margin-right: 0;
     
   }
   
@@ -17,7 +19,7 @@ body {
 
   .main-container {
     width: 100%;
-    max-width: 768.98px;
+    max-width: 320px;
     box-sizing: border-box;
   }
 
@@ -148,7 +150,8 @@ body {
     position: relative;
     width: 100%;
     bottom: 30px;    
-    z-index: 1;   
+    z-index: 1;
+     
   }
 
   .lapalette, .enchantee {
@@ -182,7 +185,8 @@ body {
   .entrees, .plats, .desserts {
     padding-bottom: 10px;
     padding-left: 10px;
-    padding-right: 10px;
+    
+    width: 76%;
   }
 
   .subtitle_lacarte {
@@ -214,6 +218,9 @@ body {
     position: relative;
     padding-right: 10px;
     padding-left: 10px;
+    width: 100%;
+    
+    
   }
 
   .titre_menus {    
@@ -223,6 +230,8 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin: 0; 
+    width: 100%;
+    margin-top: 2px;
   }
 
   .subtitle_menus {   
@@ -232,6 +241,7 @@ body {
     letter-spacing: 0em;
     text-align: left;
     margin: 0;
+    width: 100%;
     
   }
 
@@ -241,8 +251,9 @@ body {
     position: relative;
     text-align: end;
     position: absolute;       
-    left: 260px;
+    left: 210px;
     top: 35px;
+    
   }
 
   .euros {

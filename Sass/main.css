@@ -140,6 +140,8 @@ body {
   justify-content: center;
   width: 100%;
   position: relative;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 nav {
@@ -150,7 +152,7 @@ nav {
 
 .main-container {
   width: 100%;
-  max-width: 768.98px;
+  max-width: 320px;
   box-sizing: border-box;
 }
 
@@ -310,7 +312,7 @@ b {
 .entrees, .plats, .desserts {
   padding-bottom: 10px;
   padding-left: 10px;
-  padding-right: 10px;
+  width: 76%;
 }
 
 .subtitle_lacarte {
@@ -341,6 +343,7 @@ b {
   position: relative;
   padding-right: 10px;
   padding-left: 10px;
+  width: 100%;
 }
 
 .titre_menus {
@@ -350,6 +353,8 @@ b {
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+  width: 100%;
+  margin-top: 2px;
 }
 
 .subtitle_menus {
@@ -359,6 +364,7 @@ b {
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
+  width: 100%;
 }
 
 .prix {
@@ -367,7 +373,7 @@ b {
   position: relative;
   text-align: end;
   position: absolute;
-  left: 260px;
+  left: 210px;
   top: 35px;
 }
 
@@ -443,6 +449,18 @@ button :hover {
 
 .searchbutton a {
   color: #fff;
+}
+
+.div-vert {
+  background-color: rgb(153, 226, 208);
+  position: absolute;
+  width: 60px;
+  height: 70px;
+  top: 1px;
+  left: 92%;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  border: none;
 }
 
 .fa-location-dot {
@@ -545,6 +563,26 @@ abbr {
 
 .fa-utensils, .fa-handshake-simple {
   font-size: 12px;
+}
+
+.fa-check {
+  width: 10px;
+  height: 10px;
+  top: 24.97px;
+  left: 650px;
+  padding: 5px;
+  color: rgb(153, 226, 208);
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-left: 12px;
+  z-index: 1;
 }
 
 input {
