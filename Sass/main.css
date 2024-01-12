@@ -543,6 +543,10 @@ abbr {
   color: black;
 }
 
+.fa-utensils, .fa-handshake-simple {
+  font-size: 12px;
+}
+
 input {
   border: none;
   justify-content: center;
