@@ -32,8 +32,25 @@
     line-height: 19px;
     letter-spacing: 0em;
     border: none;
+    
 }
 
+button :hover {
+  transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -htm-transition: 1s;
+  -webkit-transition: 1s;
+  opacity: 0.8;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+  
+ 
+}
+
+.searchbutton a {
+  color: #fff;
+}
   
 
  

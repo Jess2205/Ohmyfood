@@ -78,10 +78,12 @@
     top: 30%;
     left: 80%;
     color: #FFFFFF;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;   
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: black;
     font-size: 1.5em;
-  }
+    transition: all 2s;
+   
+}
 
   
    .coeur1 :hover {
@@ -91,13 +93,10 @@
    -moz-background-clip: text;
    -moz-text-fill-color: transparent;
    -webkit-text-stroke-color:transparent;
-   transition-property: all;
    transition-duration: 2s;
-   animation-direction: normal;
-   animation-name: content: '\f004';;
- 
+   transition-property: all;
    
-  
+   
 }
 
   .fa-left-long {

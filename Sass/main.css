@@ -429,6 +429,21 @@ b {
   border: none;
 }
 
+button :hover {
+  transition: 1s;
+  -moz-transition: 1s;
+  -o-transition: 1s;
+  -htm-transition: 1s;
+  -webkit-transition: 1s;
+  opacity: 0.8;
+  -moz-opacity: 1;
+  -khtml-opacity: 1;
+}
+
+.searchbutton a {
+  color: #fff;
+}
+
 .fa-location-dot {
   display: flex;
   width: 10%;
@@ -506,9 +521,10 @@ abbr {
   top: 30%;
   left: 80%;
   color: #FFFFFF;
-  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: black;
   font-size: 1.5em;
+  transition: all 2s;
 }
 
 .coeur1 :hover {
@@ -518,9 +534,8 @@ abbr {
   -moz-background-clip: text;
   -moz-text-fill-color: transparent;
   -webkit-text-stroke-color: transparent;
-  transition-property: all;
   transition-duration: 2s;
-  animation-direction: normal;
+  transition-property: all;
 }
 
 .fa-left-long {
