@@ -220,13 +220,18 @@ body {
     padding-left: 10px;
     width: 115%;
     height: 30px;
-  
-    
+    display: flex;
   }
 
-  
+ .menu :hover{
+  width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+ 
+}
 
-  
+
 
   .titre_menus {    
     font-size: 1em;
@@ -237,7 +242,10 @@ body {
     margin: 0; 
     width: 100%;
     margin-top: 2px;
+    display: flex;
+    
   }
+
 
   .subtitle_menus {   
     font-size: 0.750em;
@@ -247,8 +255,13 @@ body {
     text-align: left;
     margin: 0;
     width: 100%;
+    display: flex;
+    
     
   }
+
+  
+   
 
   .prix {
     margin: 0;
@@ -258,9 +271,11 @@ body {
     position: absolute;       
     left: 250px;
     top: 35px;
-    
   }
 
+ 
+
+ 
   .euros {
     font-weight: 700;
   }

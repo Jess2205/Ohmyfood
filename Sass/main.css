@@ -351,6 +351,14 @@ b {
   padding-left: 10px;
   width: 115%;
   height: 30px;
+  display: flex;
+}
+
+.menu :hover {
+  width: 100px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
 .titre_menus {
@@ -362,6 +370,7 @@ b {
   margin: 0;
   width: 100%;
   margin-top: 2px;
+  display: flex;
 }
 
 .subtitle_menus {
@@ -372,6 +381,7 @@ b {
   text-align: left;
   margin: 0;
   width: 100%;
+  display: flex;
 }
 
 .prix {
