@@ -54,19 +54,17 @@ button :hover {
 }
   
 .div-vert {
-  background-color:rgba(153, 226, 208, 1);
-  position: absolute;
-    width: 60px;
-    height: 70px;
-    top: 1px;
-    left: 92%;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    border: none;
-   
+ border: none;
+ background-color: transparent;
+  
 }
  
-  
+  .div-vert :hover{
+    opacity: 1;
+    width: 10%;
+    transition-property: all;
+    
+}
  
   
   
