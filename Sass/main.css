@@ -96,8 +96,14 @@ footer {
   height: 13px;
 }
 
-.logofooter-txt {
+.logofooter-txt, .logofooter-txt2 {
   margin-left: 10px;
+}
+
+.rotate {
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
 }
 
 .search-bar {
@@ -343,7 +349,7 @@ b {
   position: relative;
   padding-right: 10px;
   padding-left: 10px;
-  width: 100%;
+  width: 115%;
   height: 30px;
 }
 
@@ -374,7 +380,7 @@ b {
   position: relative;
   text-align: end;
   position: absolute;
-  left: 210px;
+  left: 250px;
   top: 35px;
 }
 
@@ -579,7 +585,7 @@ abbr {
   width: 2px;
   height: 20px;
   top: 1px;
-  left: 92%;
+  left: 78%;
   border-top-right-radius: 25%;
   border-bottom-right-radius: 25%;
 }
@@ -587,6 +593,17 @@ abbr {
 .fa-check :hover {
   opacity: 1;
   background-color: rgb(153, 226, 208);
+}
+
+.fa-handshake-simple {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
 }
 
 input {

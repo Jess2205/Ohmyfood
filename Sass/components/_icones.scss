@@ -126,9 +126,10 @@
       width: 2px;
      height: 20px;
       top: 1px;
-      left: 92%;
+      left: 78%;
       border-top-right-radius: 25%;
       border-bottom-right-radius: 25%;
+      
       
       
    
@@ -138,11 +139,22 @@
   .fa-check :hover {
     opacity: 1;
     background-color:rgba(153, 226, 208, 1) ;
-    
-    
-    
+      
 }
  
+.fa-handshake-simple {
+  transform: rotate(-30deg);
+  -webkit-transform: rotate(-30deg);
+  -moz-transform: rotate(-30deg);
+  -ms-transform: rotate(-30deg);
+  -o-transform: rotate(-30deg);
+  display: flex;
+  justify-content: center;
+  padding-top: 5px;
+ 
+ 
+ 
+}
   
   
   

@@ -42,7 +42,12 @@ footer {
     height: 13px;
 }
 
-.logofooter-txt {
+.logofooter-txt, .logofooter-txt2 {
     margin-left: 10px;
 }
-    
+
+.rotate {
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 0;
+}
