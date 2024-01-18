@@ -33,9 +33,10 @@
     letter-spacing: 0em;
     border: none;
     
+    
 }
 
-button :hover {
+.searchbutton :hover {
   transition: 1s;
   -moz-transition: 1s;
   -o-transition: 1s;
@@ -53,18 +54,7 @@ button :hover {
   color: #fff;
 }
   
-.div-vert {
- border: none;
- background-color: transparent;
-  
-}
- 
-  .div-vert :hover{
-    opacity: 1;
-    width: 10%;
-    transition-property: all;
-    
-}
+
  
   
   

@@ -9,15 +9,21 @@
     padding-left: 20px;
     color: rgba(255, 255, 255, 1);
     margin-top: 0;
+    width: 95%;
 }
 
 footer {
     background: rgba(53, 53, 53, 1);
     padding-top: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     font-size: 18px; 
     position: relative;
+   
   }
+
+.footer-container {
+    width: 100%;
+}
 
 .footer_restaurants {
    
@@ -26,9 +32,12 @@ footer {
     padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
-    width: 100%;  
-    bottom: 27px; 
+    width: 95%;
+    top:-70px;
+   
 }
+
+   
 
 
 
