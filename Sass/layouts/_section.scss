@@ -237,7 +237,8 @@ body {
     height: 30px;
     left: -10px;
     bottom: 55px;
-    opacity: 0;   
+    opacity: 0; 
+     
 }
 
 .menu2 {
@@ -257,14 +258,27 @@ body {
   height: 30px;
   opacity: 1;
   left: -10px; 
+  
 }
 
 .menu2 :hover{
  opacity: 1;
+ 
+  
+  
+ 
+ 
 }
 
 .menu :hover {
   opacity: 1;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition-property: all;
+ 
+  
 }
 
 .menu :active{
@@ -286,8 +300,11 @@ body {
   margin: 0; 
   width: 100%;
   margin-top: 2px;
-  display: flex;  
+  display: flex; 
+  
 }
+
+
 
   .titre_menus2 {    
     font-size: 1em;
@@ -301,7 +318,7 @@ body {
     display: flex;
   }
 
-
+  
 
   .subtitle_menus {   
     font-size: 0.750em;
@@ -312,6 +329,10 @@ body {
     margin: 0;
     width: 100%;
     display: flex;
+    
+    
+    
+
     
     
   }

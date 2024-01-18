@@ -370,6 +370,7 @@ b {
   left: -10px;
   bottom: 55px;
   opacity: 0;
+  overflow: hidden;
 }
 
 .menu2 {
@@ -397,6 +398,15 @@ b {
 
 .menu :hover {
   opacity: 1;
+  max-width: 170px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  transition-property: all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  animation-direction: alternate-reverse;
 }
 
 .menu :active {
