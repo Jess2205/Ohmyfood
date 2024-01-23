@@ -7,16 +7,3 @@
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
-/* mixin pour multiligne */
-@mixin  multiLineEllipsis ( $font-size : 1 em , $line-height : 1.2 , $lines-to-show ) {
-    bloc de visualisation ; // Repli pour les non-webkit
-    affichage : -webkit-box ;
-    hauteur : $font-size * $line-height * $lines-to-show ; // Repli pour les non-webkit
-    taille de police : $ taille de police ;
-    hauteur de ligne : $hauteur de ligne ;
-    -webkit-line-clamp : $lines-to-show ;
-    -webkit-box-orient : vertical ;
-    débordement caché: ;_
-    débordement de texte : points de suspension ;
-  }

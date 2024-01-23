@@ -11,7 +11,7 @@
   }
   
   .section-title {
-    width: 70%;
+    width: 100%;
     font-size: 2em;
     font-weight: 700;
     text-align: center;
@@ -59,7 +59,14 @@
   width: 90%;
 }
  
+ul {
+  text-decoration: none;
+  padding: 0;
+  list-style-type: none;
   
+} 
+
+
  
   
  

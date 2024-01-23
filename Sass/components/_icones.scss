@@ -5,9 +5,7 @@
     color: black;
     align-items: center;    
     padding: 10px;
-    padding-left: 30px;
-    
-    
+    padding-left: 30px; 
   }
 
   abbr {
@@ -45,8 +43,7 @@
     font-weight: 500;
     line-height: 19px;
     letter-spacing: 0em;
-    text-align: left; 
-   
+    text-align: left;  
   }  
   
   .ellipse {
@@ -81,29 +78,19 @@
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color: black;
     font-size: 1.5em;
-    transition: all 2s;
-   
-}
+    transition: all 2s;  
+  }
 
-  
-   .coeur1 :hover {
-   background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-   -webkit-background-clip: text;
-   -webkit-text-fill-color: transparent;
-   -moz-background-clip: text;
-   -moz-text-fill-color: transparent;
-   -webkit-text-stroke-color:transparent;
-   transition-duration: 2s;
-   transition-property: all;
-   
-   
-}
+  .coeur1 :hover {
+    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+    transition-duration: 2s;
+    transition-property: all;   
+  }
 
   .fa-left-long {
     color: black;
     margin-left: 20px;
-    font-size: 25px;
-    
+    font-size: 25px;   
   }
 
   .fa-utensils, .fa-handshake-simple {
@@ -111,126 +98,40 @@
   }
 
   .fa-check-circle {
-    padding-bottom: 0;
-    padding: 20px;
-    background-color:transparent ;
-    color:#FFFFFF;
-    display: flex;
+	  width:16px;
+	  padding: 26px;
+	  border-radius:0px,15px,15px,0px;
+    color: #FFFFFF;
     justify-content: center;
-    text-align:center;
-    z-index: 1;
-    opacity: 1;
-    position: absolute;
-    width: 15px;
-    height: 20px;
-    top: 1px;
-    left: 1%;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    
-}
-
-.double {    
-  padding-bottom: 0;
-  padding: 20px;
-  background-color:transparent ;
-  color:#FFFFFF;
-  display: flex;
-  justify-content: center;
-  text-align:center;
-  z-index: 1;
-  opacity: 1;   
-  position: absolute;
-  width: 15px;
-  height: 20px;
-  top: 1px;
-  left: 1%;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 25%;
+    align-items: center;
+    display: flex;   
+	  border-top-right-radius: 25%;
+	  border-bottom-right-radius: 25%;
    
-}
+  }
 
-.div-vert {
-  padding-bottom: 0;
-  padding: 20px;
-  background-color:white ;
-  color:#FFFFFF;
-  display: flex;
-  justify-content: center;
-  text-align:center;
-  z-index: 1;
-  opacity: 1;
-  position: absolute;
-  width: 15px;
-  height: 20px;
-  top: 1px;
-  left: 88%;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 25%;
-  padding-right: 20px;
-  border: none; 
-}
-
-.div-vert2 {
-  padding-bottom: 0;
-  padding: 20px;
-  background-color:rgba(153, 226, 208, 1);
-  color:#FFFFFF; 
-  justify-content: center;
-  text-align:center;   
-  z-index: 1;
-  opacity: 0;   
-  position: absolute;
-  width: 15px;
-  height: 20px;
-  bottom: 1px;
-  left: 86%;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 25%;
-  padding-right: 20px;
-  border: none;
-}
-
-.div-vert :hover {
-  background-color:transparent ;
-}
-
-
-.div-vert2 :hover{
- opacity: 1;
- 
- 
-}
-
-.fa-check :hover {
-opacity: 1;
-transform: scale(2);
--webkit-transform: scale(2);
--moz-transform: scale(2);
--ms-transform: scale(2);
--o-transform: scale(2);
-}
+  .check :hover  {
+    direction:ltr;
     
+    animation-direction:alternate-reverse;
+    transition: right 60s left 30s transform 30s;
+    animation-delay: 20s;
+    padding-left: 30px;
+    margin-right: 27px;
+    animation-timing-function: ease-in-out;
+    -webkit-transition: right 60s left 30s transform 30s;
+    -moz-transition: right 60s left 30s transform 30s;
+    -ms-transition: right 60s left 30s transform 30s;
+    -o-transition: right 60s left 30s transform 30s;
+    opacity: 1;
+    transition:all 10; 
+  }
 
- 
-.fa-handshake-simple {
-transform: rotate(-30deg);
--webkit-transform: rotate(-30deg);
--moz-transform: rotate(-30deg);
--ms-transform: rotate(-30deg);
--o-transform: rotate(-30deg);
-display: flex;
-justify-content: center;
-padding-top: 5px; 
-}
-  
-  
-  
-  
- 
+  .fa-handshake-simple {
+    transform: rotate(-30deg);
+    -webkit-transform: rotate(-30deg);
+    -moz-transform: rotate(-30deg);
+    -ms-transform: rotate(-30deg);
+    -o-transform: rotate(-30deg);
+  }
 
-
-  
-  
-  
-  

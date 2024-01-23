@@ -1,0 +1,125 @@
+@keyframes anim {
+    
+        0% {
+          
+          left: 0px;
+          top: 0px;
+        }
+        25% {
+         
+          left: 200px;
+          top: 0px;
+        }
+        50% {
+          
+          left: 200px;
+          top: 200px;
+        }
+        75% {
+            
+            left: 0px;
+            top: 200px;
+          }
+          100% {
+            
+            left: 0px;
+            top: 0px;
+          }
+        }
+
+@keyframes slidein {
+    from {
+        margin-right: 100%;
+        width: 300%;
+      }
+    
+      to {
+        margin-right: 0%;
+        width: 100%;
+      }
+    }
+        
+
+@keyframes prix {
+    0% {
+          
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+       
+        left: 200px;
+        top: 0px;
+      }
+      50% {
+        
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+          
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          
+          left: 0px;
+          top: 0px;
+        }}
+
+@keyframes menu {
+    0% {
+          
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+       
+        left: 200px;
+        top: 0px;
+      }
+      50% {
+        
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+          
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          
+          left: 0px;
+          top: 0px;
+        }
+}
+
+@keyframes menu-txt {
+    0% {
+          
+        left: 0px;
+        top: 0px;
+      }
+      25% {
+       
+        left: 200px;
+        top: 0px;
+      }
+      50% {
+        
+        left: 200px;
+        top: 200px;
+      }
+      75% {
+          
+          left: 0px;
+          top: 200px;
+        }
+        100% {
+          
+          left: 0px;
+          top: 0px;
+        }
+
+}
