@@ -385,15 +385,31 @@ b {
   overflow: hidden;
   white-space: nowrap;
   animation-name: slidein;
-  animation-duration: 30s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .menuetprix :hover {
   width: 210px;
   overflow: hidden;
   transform: translateX(0px);
+  animation-name: slidein;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .check {
@@ -415,9 +431,15 @@ b {
   -ms-transform: translateX(60px);
   -o-transform: translateX(60px);
   animation-name: slidein;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .check :hover {
@@ -429,6 +451,16 @@ b {
   border-top-right-radius: 25%;
   border-bottom-right-radius: 25%;
   overflow: hidden;
+  animation-name: slidein;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .prix {
@@ -447,9 +479,15 @@ b {
   -o-transform: translateX(50px);
   transition: transform 2s;
   animation-name: slidein;
-  animation-duration: 3s;
+  animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .prix :hover {
@@ -470,6 +508,16 @@ b {
   -ms-transform: translateX(50px);
   -o-transform: translateX(50px);
   transition: transform 2s;
+  animation-name: slidein;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transition: all 10s;
+  animation-direction: reverse;
+  -webkit-transition: all 10s;
+  -moz-transition: all 10s;
+  -ms-transition: all 10s;
+  -o-transition: all 10s;
 }
 
 .menu-txt {
@@ -575,18 +623,16 @@ b {
 }
 
 .searchbutton a:hover {
-  transition: 1s;
-  -moz-transition: 1s;
-  -o-transition: 1s;
-  -htm-transition: 1s;
-  -webkit-transition: 1s;
-  opacity: 1;
-  -moz-opacity: 1;
-  -khtml-opacity: 1;
-  -ms-transition: 1s;
+  transition: all 2s;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -htm-transition: all 2s;
+  -webkit-transition: all 2s;
+  -ms-transition: all 2s;
   filter: brightness(1.75);
   -webkit-filter: brightness(1.75);
   box-shadow: inset 0px 6px 15px 0px #fff;
+  transition: transform 330ms ease-in-out;
 }
 
 .searchbutton a {
@@ -677,16 +723,27 @@ abbr {
   top: 45%;
   left: 85%;
   color: #FFFFFF;
+  background-color: #FFFFFF;
   -webkit-text-stroke-width: 0.8px;
   -webkit-text-stroke-color: black;
   font-size: 1.5em;
-  transition: all 2s;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
 }
 
-.coeur1 :hover {
-  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  transition-duration: 2s;
-  transition-property: all;
+.fa-heart::before {
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+
+.fa-heart:hover::before {
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
 }
 
 .fa-left-long {

@@ -237,22 +237,39 @@ nav {
     overflow: hidden;
     white-space: nowrap; 
     animation-name: slidein;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
    
   }
 
   .menuetprix :hover {
     width: 210px;
     overflow: hidden;
-    transform: translateX(0px); 
+    transform: translateX(0px);
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
+    
   }
 
   .check   {
     width: 60px;
     background-color:rgba(153, 226, 208, 1);
-    position: relative;    
+    position: relative;
     padding: 15px;
     right: 30px;
     justify-content: center;
@@ -260,18 +277,24 @@ nav {
     display: flex;
     border-top-right-radius: 25%;
     border-bottom-right-radius: 25%;
-    overflow:hidden;    
+    overflow:hidden;
     transform: translateX(60px);
     transition: transform 2s;
     -webkit-transform: translateX(60px);
     -moz-transform: translateX(60px);
     -ms-transform: translateX(60px);
-    -o-transform: translateX(60px); 
+    -o-transform: translateX(60px);
     animation-name: slidein;
-    animation-duration: 3s;
+    animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;  
-  }
+    animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
+}
 
   .check :hover  {
     width: 60px;
@@ -281,7 +304,18 @@ nav {
     display: flex;
     border-top-right-radius: 25%;
     border-bottom-right-radius: 25%;
-    overflow:hidden;  
+    overflow:hidden; 
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
+   
   }
 
   .prix {
@@ -300,9 +334,15 @@ nav {
   -o-transform: translateX(50px);
   transition: transform 2s;
   animation-name: slidein;
-  animation-duration: 3s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
  
   }
 
@@ -324,6 +364,16 @@ nav {
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);
     transition: transform 2s;
+    animation-name: slidein;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:all 10s;
+    animation-direction: reverse;
+    -webkit-transition:all 10s;
+    -moz-transition:all 10s;
+    -ms-transition:all 10s;
+    -o-transition:all 10s;
     
   }
   

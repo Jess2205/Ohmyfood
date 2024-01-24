@@ -75,17 +75,28 @@
     top: 45%;
     left: 85%;
     color: #FFFFFF;
+    background-color: #FFFFFF;
     -webkit-text-stroke-width: 0.8px;
     -webkit-text-stroke-color: black;
     font-size: 1.5em;
-    transition: all 2s;  
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;  
   }
 
-  .coeur1 :hover {
-    background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-    transition-duration: 2s;
-    transition-property: all;   
+  .fa-heart::before {
+    font-weight: bold;
+    transition: color 1s ease-out;
   }
+
+  .fa-heart:hover::before{
+    background-clip: text;
+    color:transparent ;
+    background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);  
+  }
+  
 
   .fa-left-long {
     color: black;
