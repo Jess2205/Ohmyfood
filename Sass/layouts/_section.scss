@@ -250,7 +250,7 @@ nav {
     width: 240px;
     overflow: hidden;
     transform: translateX(0px) ease;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-direction: alternate-reverse ease;
     transform-origin: right;
@@ -281,7 +281,7 @@ nav {
   -moz-transform: translateX(60px);
   -ms-transform: translateX(60px);
   -o-transform: translateX(60px);  
-  animation-duration: 10s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse ease;  
   
@@ -299,7 +299,7 @@ nav {
   border-top-right-radius: 25%;
   border-bottom-right-radius: 25%;
   overflow:hidden;
-  animation-duration: 10s;
+  animation-duration: 60s;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse ease;
   animation-fill-mode: forwards;
@@ -327,7 +327,7 @@ nav {
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);    
-      animation-duration: 10s;
+      animation-duration: 30s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse ease;      
       
@@ -342,24 +342,27 @@ nav {
     .prix :hover {
       width: 27px;
       height: 18px;
-      margin-right: 2px;      
-      padding-top: 27px;       
+      margin-right: 2px;
+      padding-top: 27px;
       display: flex;
       text-align: end;
       transform: translateX(50px);
       -webkit-transform: translateX(50px);
       -moz-transform: translateX(50px);
       -ms-transform: translateX(50px);
-      -o-transform: translateX(50px);     
-      animation-duration: 10s;
+      -o-transform: translateX(50px);
+      animation-duration: 30s;
       animation-iteration-count: infinite;
       animation-direction: alternate-reverse ease;
-      transition:all 10s;
-      
+      transition:all 30s;
       animation-delay: 3000ms;
       animation-name: direction;
       animation-name: translateX;
-    }
+      -webkit-transition:all 30s;
+      -moz-transition:all 30s;
+      -ms-transition:all 30s;
+      -o-transition:all 30s;
+}
   
   
   .menu-txt {
