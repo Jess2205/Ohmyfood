@@ -99,7 +99,7 @@
 
   .fa-check-circle {
 	  width:16px;
-	  padding: 26px;
+	  margin-right: 30px;
 	  border-radius:0px,15px,15px,0px;
     color: #FFFFFF;
     justify-content: center;
@@ -107,24 +107,8 @@
     display: flex;   
 	  border-top-right-radius: 25%;
 	  border-bottom-right-radius: 25%;
-   
-  }
-
-  .check :hover  {
-    direction:ltr;
+    overflow: hidden;
     
-    animation-direction:alternate-reverse;
-    transition: right 60s left 30s transform 30s;
-    animation-delay: 20s;
-    padding-left: 30px;
-    margin-right: 27px;
-    animation-timing-function: ease-in-out;
-    -webkit-transition: right 60s left 30s transform 30s;
-    -moz-transition: right 60s left 30s transform 30s;
-    -ms-transition: right 60s left 30s transform 30s;
-    -o-transition: right 60s left 30s transform 30s;
-    opacity: 1;
-    transition:all 10; 
   }
 
   .fa-handshake-simple {

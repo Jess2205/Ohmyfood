@@ -214,16 +214,15 @@ nav {
     height: 72px;
     padding: 15px;
     gap: 5px;
-    animation-name: menu-txt;
-   
-    
+     
   }
 
-  
-  
+  .menu :hover {
+    overflow: hidden;
+  }
 
   .menuetprix {
-    width: 349px;
+    max-width: 349px;
     height: 69px;
     background: rgba(255, 255, 255, 1);
     border-radius: 15.04px;
@@ -236,64 +235,125 @@ nav {
     justify-content: space-between;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap;
-    
-    
+    white-space: nowrap; 
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+   
   }
 
-  .menuetprix :hover .check {
-    width: 100px;
-    transform: translateX(0);
- 
-}
-
-  .menu-txt {
-	  width: 287px;	 
-	  padding-left: 10px;
-    text-overflow: ellipsis;
+  .menuetprix :hover {
+    width: 210px;
     overflow: hidden;
-    white-space: nowrap;
-    
-    
-	  
-}
-
-  .titre_menus { 
-    width: 100%;  
-     
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 21.09px;
-    color: black; 
-    
-    padding-top: 5px;
-    margin: 0;
+    transform: translateX(0px); 
   }
 
-  .subtitle_menus {
-    width: 100%;
-       
-    font-size: 15.04px;
-    font-weight: 300;
-    line-height: 17.63px;
-    color: rgba(0, 0, 0, 1);
-    
-    
+  .check   {
+    width: 60px;
+    background-color:rgba(153, 226, 208, 1);
+    position: relative;    
+    padding: 15px;
+    right: 30px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    overflow:hidden;    
+    transform: translateX(60px);
+    transition: transform 2s;
+    -webkit-transform: translateX(60px);
+    -moz-transform: translateX(60px);
+    -ms-transform: translateX(60px);
+    -o-transform: translateX(60px); 
+    animation-name: slidein;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;  
+  }
+
+  .check :hover  {
+    width: 60px;
+    background-color:rgba(153, 226, 208, 1);    
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
+    overflow:hidden;  
   }
 
   .prix {
+  width: 27px;
+  height: 18px;
+  margin-right: 2px; 
+  padding-top: 27px;
+  position: relative;
+  right: 40px;  
+  display: flex;
+  text-align:start;
+  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+  -moz-transform: translateX(50px);
+  -ms-transform: translateX(50px);
+  -o-transform: translateX(50px);
+  transition: transform 2s;
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+ 
+  }
+
+  .prix :hover {
     width: 27px;
-    height: 18px;    
+    height: 18px;
+    margin-right: 2px;
     transition: all;
     -webkit-transition: all;
     -moz-transition: all;
     -ms-transition: all;
     -o-transition: all;
-     padding-top: 27px;
-     margin-left: 10px;
+    padding-top: 27px;       
     display: flex;
     text-align: end;
-     
+    transform: translateX(50px);
+    -webkit-transform: translateX(50px);
+    -moz-transform: translateX(50px);
+    -ms-transform: translateX(50px);
+    -o-transform: translateX(50px);
+    transition: transform 2s;
+    
+  }
+  
+  .menu-txt {
+	  max-width: 287px;	 
+	  padding-left: 10px;
+    text-overflow: ellipsis;
+    overflow: visible;
+    white-space: nowrap; 
+   
+  }
+
+  .titre_menus { 
+    width: 287px;  
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.09px;
+    color: black; 
+    padding-top: 5px;
+    margin: 0;
+    @include line-clamp(2, 0.8em); 
+  }
+
+  .subtitle_menus {
+    width: 287px;  
+    font-size: 15.04px;
+    font-weight: 300;
+    line-height: 17.63px;
+    color: rgba(0, 0, 0, 1);
+    @include line-clamp(3, 0.8em); 
   }
 
   .prix-txt {    
@@ -305,37 +365,6 @@ nav {
     color: rgba(0, 0, 0, 1);
   }
 
-  .div-vert{
-    width:59px;
-    height:69px;
-    border-radius:0px,15px,15px,0px;
-    background-color: red;
-    color:#FFFFFF;    
-    position: absolute;    
-    transition: all 2s;
-    -webkit-transition: all 2s;
-    -moz-transition: all 2s;
-    -ms-transition: all 2s;
-    -o-transition: all 2s;
-    animation: fadein 2s;
-    -webkit-animation: fadein 2s;  
-  }
-
-  .check {
-    width: 100px;
-    background-color:rgba(153, 226, 208, 1);
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    transform: translateX(100px);
-    transition: transform 2s;
-    -webkit-transform: translateX(100px);
-    -moz-transform: translateX(100px);
-    -ms-transform: translateX(100px);
-    -o-transform: translateX(100px);
-}
 
   .commander {
     padding-top: 15px;
