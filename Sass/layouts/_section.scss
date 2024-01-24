@@ -235,147 +235,132 @@ nav {
     justify-content: space-between;
     text-overflow: ellipsis;
     overflow: hidden;
-    white-space: nowrap; 
-    animation-name: slidein;
+    white-space: nowrap;    
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
-   
-  }
-
-  .menuetprix :hover {
-    width: 210px;
-    overflow: hidden;
-    transform: translateX(0px);
-    animation-name: slidein;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
-    
-  }
-
-  .check   {
-    width: 60px;
-    background-color:rgba(153, 226, 208, 1);
-    position: relative;
-    padding: 15px;
-    right: 30px;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    overflow:hidden;
-    transform: translateX(60px);
-    transition: transform 2s;
-    -webkit-transform: translateX(60px);
-    -moz-transform: translateX(60px);
-    -ms-transform: translateX(60px);
-    -o-transform: translateX(60px);
-    animation-name: slidein;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
+    animation-direction: alternate-reverse ease;    
+    transform-origin: right;  
+    animation-delay: 3000ms;
+    animation-name: direction;
+    animation-name: translateX;
 }
 
-  .check :hover  {
-    width: 60px;
-    background-color:rgba(153, 226, 208, 1);    
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    border-top-right-radius: 25%;
-    border-bottom-right-radius: 25%;
-    overflow:hidden; 
-    animation-name: slidein;
+
+  .menuetprix :hover {
+    width: 240px;
+    overflow: hidden;
+    transform: translateX(0px) ease;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
-   
-  }
+    animation-direction: alternate-reverse ease;
+    transform-origin: right;
+    animation-delay: 3000ms;
+    animation-name: direction;
+    animation-name: translateX;
+    -webkit-transform: translateX(0px) ;
+    -moz-transform: translateX(0px) ;
+    -ms-transform: translateX(0px) ;
+    -o-transform: translateX(0px) ;
+}
+
+
+.check   {
+  width: 60px;
+  background-color:rgba(153, 226, 208, 1);
+  position: relative;
+  padding: 15px;
+  right: 30px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  overflow:hidden;
+  transform: translateX(60px); 
+  -webkit-transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -o-transform: translateX(60px);  
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse ease;  
+  
+  animation-delay: 3000ms;
+  animation-name: direction;
+  animation-name: translateX;
+}
+
+.check :hover  {
+  width: 60px;
+  background-color:rgba(153, 226, 208, 1);
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-top-right-radius: 25%;
+  border-bottom-right-radius: 25%;
+  overflow:hidden;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse ease;
+  animation-fill-mode: forwards;
+  animation-delay: 3000ms;
+  animation-name: direction;
+  animation-name: translateX;
+  transition:all 3000ms ;
+  -webkit-transition:all 3000ms ;
+  -moz-transition:all 3000ms ;
+  -ms-transition:all 3000ms ;
+  -o-transition:all 3000ms ;
+}
 
   .prix {
-  width: 27px;
-  height: 18px;
-  margin-right: 2px; 
-  padding-top: 27px;
-  position: relative;
-  right: 40px;  
-  display: flex;
-  text-align:start;
-  transform: translateX(50px);
-  -webkit-transform: translateX(50px);
-  -moz-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  -o-transform: translateX(50px);
-  transition: transform 2s;
-  animation-name: slidein;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
- 
-  }
-
-  .prix :hover {
     width: 27px;
     height: 18px;
-    margin-right: 2px;
-    transition: all;
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
-    padding-top: 27px;       
+    margin-right: 2px; 
+    padding-top: 27px;
+    position: relative;
+    right: 40px;  
     display: flex;
-    text-align: end;
+    text-align:start;
     transform: translateX(50px);
     -webkit-transform: translateX(50px);
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
-    -o-transform: translateX(50px);
-    transition: transform 2s;
-    animation-name: slidein;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    transition:all 10s;
-    animation-direction: reverse;
-    -webkit-transition:all 10s;
-    -moz-transition:all 10s;
-    -ms-transition:all 10s;
-    -o-transition:all 10s;
-    
-  }
+    -o-transform: translateX(50px);    
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse ease;      
+      
+      animation-delay: 3000ms;
+      animation-name: direction;
+      animation-name: translateX;
+      
+
+   
+    }
+  
+    .prix :hover {
+      width: 27px;
+      height: 18px;
+      margin-right: 2px;      
+      padding-top: 27px;       
+      display: flex;
+      text-align: end;
+      transform: translateX(50px);
+      -webkit-transform: translateX(50px);
+      -moz-transform: translateX(50px);
+      -ms-transform: translateX(50px);
+      -o-transform: translateX(50px);     
+      animation-duration: 10s;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse ease;
+      transition:all 10s;
+      
+      animation-delay: 3000ms;
+      animation-name: direction;
+      animation-name: translateX;
+    }
+  
   
   .menu-txt {
 	  max-width: 287px;	 
@@ -383,7 +368,6 @@ nav {
     text-overflow: ellipsis;
     overflow: visible;
     white-space: nowrap; 
-   
   }
 
   .titre_menus { 

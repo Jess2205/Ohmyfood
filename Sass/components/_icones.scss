@@ -83,18 +83,24 @@
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
     -ms-border-radius: 50%;
-    -o-border-radius: 50%;  
+    -o-border-radius: 50%;
+    animation-name: direction;
+    animation-direction: alternate-reverse;   
   }
 
   .fa-heart::before {
     font-weight: bold;
     transition: color 1s ease-out;
+    animation-name: direction;
+    animation-direction: alternate-reverse; 
   }
 
   .fa-heart:hover::before{
     background-clip: text;
     color:transparent ;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);  
+    animation-name: direction;
+    animation-direction: alternate-reverse; 
   }
   
 
