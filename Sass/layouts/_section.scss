@@ -40,13 +40,13 @@ nav {
 
   .menus {
     background-color: #F2F4F4;
-    padding-left: 10px;
+    
     padding-top: 30px;
     padding-bottom: 50px;
   }
 
   .section-title3{
-    padding-left: 5px;
+    padding-left: 5px; 
   }
   
   .carte img {
@@ -65,8 +65,10 @@ nav {
 
   .img-restaurant {
     width: 100%;
-    object-fit:cover; 
+    object-fit:cover;   
   }
+
+  
   
   .image-txt {
       position: absolute;
@@ -151,14 +153,14 @@ nav {
     -moz-border-radius:25px 25px 0px 0px ;
     -ms-border-radius:25px 25px 0px 0px ;
     -o-border-radius:25px 25px 0px 0px ;
-    padding-left: 20px;
+    
     position: relative;
     width:100%;
     bottom: 30px;    
     z-index: 1;
     padding-bottom: 30px;
     margin: 0;
-    left: -5px;
+    
     top: -70px;
    
   }
@@ -175,6 +177,8 @@ nav {
   .titre_lacarte_coeur {
     position: relative;
     width: 95%;
+    padding-left: 15px;
+   
   }
 
   .titre_lacarte {
@@ -189,11 +193,13 @@ nav {
     position: relative;
     padding-right: 0; 
     width: 100%;
-    padding-top: 20px;  
+   
+    
   }
 
   .entrees, .plats, .desserts {
-    gap: 12px; 
+    gap: 5px; 
+    margin-left: 5px;
   }
 
   .subtitle_lacarte {
@@ -210,13 +216,13 @@ nav {
   }
   
   .menu {
-    width: 349px;
+    max-width: 349px;
     height: 72px;
-    padding: 15px;
+    padding-bottom: 15px;
     gap: 5px;
     
-   
-     
+    
+    
   }
 
   .menu :hover {
@@ -224,8 +230,9 @@ nav {
   }
 
   .menuetprix {
-    max-width: 349px;
+    max-width: 310px;
     height: 69px;
+    
     background: rgba(255, 255, 255, 1);
     border-radius: 15.04px;
     -webkit-border-radius: 15.04px;
@@ -238,17 +245,18 @@ nav {
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
-    
     transform: translateX(0px) ;
     -webkit-transform: translateX(0px) ;
     -moz-transform: translateX(0px) ;
     -ms-transform: translateX(0px) ;
     -o-transform: translateX(0px) ;
     transition-property: all;
+    animation: translateX 3000ms linear 200ms reverse ;
+    -webkit-animation: translateX 3000ms linear 200ms reverse ;
 }
 
   .menuetprix :hover {
-    width: 240px;
+    width: 210px;
     overflow: hidden;
     transform: translateX(0px) ;
     -webkit-transform: translateX(0px) ;
@@ -256,8 +264,7 @@ nav {
     -ms-transform: translateX(0px) ;
     -o-transform: translateX(0px) ;
     transform-origin: right;
-    animation: largeur 3s linear 2S reverse ;
-    -webkit-animation: largeur 3s linear 2S reverse ;
+    
 }
   
 
@@ -265,6 +272,7 @@ nav {
   width: 60px;
   background-color:rgba(153, 226, 208, 1);
   position: relative;
+  
   padding: 15px;
   right: 30px;
   justify-content: center;
@@ -278,7 +286,6 @@ nav {
   -moz-transform: translateX(60px);
   -ms-transform: translateX(60px);
   -o-transform: translateX(60px);
-  
 }
 
 .check :hover {
@@ -296,6 +303,7 @@ nav {
     width: 27px;
     height: 18px;
     margin-right: 2px;
+    
     padding-top: 27px;
     position: relative;
     right: 40px;
@@ -306,7 +314,6 @@ nav {
     -moz-transform: translateX(50px);
     -ms-transform: translateX(50px);
     -o-transform: translateX(50px);
-    
 }
    .prix :hover {
     transform: translateX(50px);
@@ -321,31 +328,33 @@ nav {
     
   
   .menu-txt {
-	  max-width: 287px;	 
-	  padding-left: 10px;
+	  width: 245px;	 
+	  margin: 10px;
     text-overflow: ellipsis;
     overflow: visible;
-    white-space: nowrap; 
+    white-space: nowrap;
+    
   }
 
   .titre_menus { 
     width: 287px;  
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 700;
     line-height: 21.09px;
     color: black; 
-    padding-top: 5px;
-    margin: 0;
+    margin:0;
+    
     @include line-clamp(2, 0.8em); 
   }
 
   .subtitle_menus {
     width: 287px;  
-    font-size: 15.04px;
+    font-size: 0.8em;
     font-weight: 300;
     line-height: 17.63px;
     color: rgba(0, 0, 0, 1);
-    @include line-clamp(3, 0.8em); 
+    @include line-clamp(3, 0.8em);
+   
   }
 
   .prix-txt {    

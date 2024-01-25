@@ -1,3 +1,18 @@
+#content {
+  width: 100%;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  #content {
+    width: 668px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  #content {
+    width: 1024px;
+  }
+}
+
 * {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -11,10 +26,9 @@
 
 .section-title {
   width: 100%;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 700;
   text-align: center;
-  padding-left: 42px;
   line-height: 28.13px;
 }
 
@@ -70,9 +84,9 @@ ul {
   letter-spacing: 0em;
   text-align: left;
   padding-left: 20px;
-  color: rgb(255, 255, 255);
   margin-top: 0;
   width: 139px;
+  -webkit-filter: invert(100%);
 }
 
 footer {
@@ -192,7 +206,6 @@ nav {
 
 .menus {
   background-color: #F2F4F4;
-  padding-left: 10px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -301,14 +314,12 @@ b {
   -moz-border-radius: 25px 25px 0px 0px;
   -ms-border-radius: 25px 25px 0px 0px;
   -o-border-radius: 25px 25px 0px 0px;
-  padding-left: 20px;
   position: relative;
   width: 100%;
   bottom: 30px;
   z-index: 1;
   padding-bottom: 30px;
   margin: 0;
-  left: -5px;
   top: -70px;
 }
 
@@ -324,6 +335,7 @@ b {
 .titre_lacarte_coeur {
   position: relative;
   width: 95%;
+  padding-left: 15px;
 }
 
 .titre_lacarte {
@@ -338,11 +350,11 @@ b {
   position: relative;
   padding-right: 0;
   width: 100%;
-  padding-top: 20px;
 }
 
 .entrees, .plats, .desserts {
-  gap: 12px;
+  gap: 5px;
+  margin-left: 5px;
 }
 
 .subtitle_lacarte {
@@ -359,9 +371,9 @@ b {
 }
 
 .menu {
-  width: 349px;
+  max-width: 349px;
   height: 72px;
-  padding: 15px;
+  padding-bottom: 15px;
   gap: 5px;
 }
 
@@ -370,7 +382,7 @@ b {
 }
 
 .menuetprix {
-  max-width: 349px;
+  max-width: 310px;
   height: 69px;
   background: rgb(255, 255, 255);
   border-radius: 15.04px;
@@ -390,10 +402,12 @@ b {
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transition-property: all;
+  animation: translateX 3000ms linear 200ms reverse;
+  -webkit-animation: translateX 3000ms linear 200ms reverse;
 }
 
 .menuetprix :hover {
-  width: 240px;
+  width: 210px;
   overflow: hidden;
   transform: translateX(0px);
   -webkit-transform: translateX(0px);
@@ -401,8 +415,6 @@ b {
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
   transform-origin: right;
-  animation: largeur 3s linear 2S reverse;
-  -webkit-animation: largeur 3s linear 2S reverse;
 }
 
 .check {
@@ -463,8 +475,8 @@ b {
 }
 
 .menu-txt {
-  max-width: 287px;
-  padding-left: 10px;
+  width: 245px;
+  margin: 10px;
   text-overflow: ellipsis;
   overflow: visible;
   white-space: nowrap;
@@ -472,11 +484,10 @@ b {
 
 .titre_menus {
   width: 287px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 1em;
+  font-weight: 700;
   line-height: 21.09px;
   color: black;
-  padding-top: 5px;
   margin: 0;
   display: block;
   display: -webkit-box;
@@ -489,7 +500,7 @@ b {
 
 .subtitle_menus {
   width: 287px;
-  font-size: 15.04px;
+  font-size: 0.8em;
   font-weight: 300;
   line-height: 17.63px;
   color: rgb(0, 0, 0);
@@ -662,7 +673,7 @@ abbr {
 
 .fa-heart, .empty, .gris {
   position: absolute;
-  top: 20%;
+  top: 18%;
   left: 85%;
   color: #FFFFFF;
   background-color: #FFFFFF;
@@ -680,6 +691,8 @@ abbr {
 
 .gris {
   background-color: rgb(246, 246, 246);
+  padding-top: 10px;
+  left: 260px;
 }
 
 .fa-heart::before {

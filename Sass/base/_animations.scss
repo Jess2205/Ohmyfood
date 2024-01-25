@@ -2,19 +2,20 @@
     
   
     0% {
-        transform: translateX(0);
-        -webkit-transform: translateX(0);
-        -moz-transform: translateX(0);
-        -ms-transform: translateX(0);
-        -o-transform: translateX(0);
-        
+        transform: translateX(0px);
+        -webkit-transform: translateX(0px);
+        -moz-transform: translateX(0px);
+        -ms-transform: translateX(0px);
+        -o-transform: translateX(0px);
+        animation-timing-function: linear 10s;
 }
     50% {
-      transform: translateX(250px);
-      -webkit-transform: translateX(250px);
-      -moz-transform: translateX(250px);
-      -ms-transform: translateX(250px);
-      -o-transform: translateX(250px);
+      transform: translateX(240px);
+      -webkit-transform: translateX(240px);
+      -moz-transform: translateX(240px);
+      -ms-transform: translateX(240px);
+      -o-transform: translateX(240px);
+      animation-timing-function: linear 10s;
 }
     100% {
         transform: translateX(349px);
@@ -22,7 +23,7 @@
         -moz-transform: translateX(349px);
         -ms-transform: translateX(349px);
         -o-transform: translateX(349px);
-        width: 349px;
+        animation-timing-function: linear 10s;
 }
 }
 
