@@ -72,7 +72,7 @@ ul {
   padding-left: 20px;
   color: rgb(255, 255, 255);
   margin-top: 0;
-  width: 100%;
+  width: 139px;
 }
 
 footer {
@@ -130,7 +130,7 @@ footer {
   padding: 20px 0px;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 197px;
   padding-left: 50px;
 }
 
@@ -384,30 +384,25 @@ b {
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  transform-origin: right;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
+  transform: translateX(0px);
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transition-property: all;
 }
 
 .menuetprix :hover {
   width: 240px;
   overflow: hidden;
-  transform: translateX(0px) ease;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  transform-origin: right;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
+  transform: translateX(0px);
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
   -o-transform: translateX(0px);
+  transform-origin: right;
+  animation: largeur 3s linear 2S reverse;
+  -webkit-animation: largeur 3s linear 2S reverse;
 }
 
 .check {
@@ -427,35 +422,17 @@ b {
   -moz-transform: translateX(60px);
   -ms-transform: translateX(60px);
   -o-transform: translateX(60px);
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
 }
 
 .check :hover {
-  width: 60px;
-  background-color: rgb(153, 226, 208);
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  border-top-right-radius: 25%;
-  border-bottom-right-radius: 25%;
-  overflow: hidden;
-  animation-duration: 60s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  animation-fill-mode: forwards;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
-  transition: all 3000ms;
-  -webkit-transition: all 3000ms;
-  -moz-transition: all 3000ms;
-  -ms-transition: all 3000ms;
-  -o-transition: all 3000ms;
+  transform: translateX(60px);
+  -webkit-transform: translateX(60px);
+  -moz-transform: translateX(60px);
+  -ms-transform: translateX(60px);
+  -o-transform: translateX(60px);
+  animation: largeur 3s linear 2S reverse;
+  transform-origin: right;
+  -webkit-animation: largeur 3s linear 2S reverse;
 }
 
 .prix {
@@ -472,37 +449,17 @@ b {
   -moz-transform: translateX(50px);
   -ms-transform: translateX(50px);
   -o-transform: translateX(50px);
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
 }
 
 .prix :hover {
-  width: 27px;
-  height: 18px;
-  margin-right: 2px;
-  padding-top: 27px;
-  display: flex;
-  text-align: end;
   transform: translateX(50px);
   -webkit-transform: translateX(50px);
   -moz-transform: translateX(50px);
   -ms-transform: translateX(50px);
   -o-transform: translateX(50px);
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate-reverse ease;
-  transition: all 30s;
-  animation-delay: 3000ms;
-  animation-name: direction;
-  animation-name: translateX;
-  -webkit-transition: all 30s;
-  -moz-transition: all 30s;
-  -ms-transition: all 30s;
-  -o-transition: all 30s;
+  animation: largeur 3s linear 2S reverse;
+  transform-origin: right;
+  -webkit-animation: largeur 3s linear 2S reverse;
 }
 
 .menu-txt {
@@ -597,7 +554,8 @@ b {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  width: 30%;
+  width: 218px;
+  height: 50px;
   align-items: center;
   margin-left: 60px;
   font-size: 16px;
@@ -605,14 +563,18 @@ b {
   line-height: 19px;
   letter-spacing: 0em;
   border: none;
+  transition: background-color 250ms;
+  -webkit-transition: background-color 250ms;
+  -moz-transition: background-color 250ms;
+  -ms-transition: background-color 250ms;
+  -o-transition: background-color 250ms;
 }
 
 .searchbutton a:hover {
   transition-property: all 2s;
-  filter: brightness(1.75);
-  -webkit-filter: brightness(1.75);
-  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  box-shadow: outset 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   opacity: 0.8;
+  background-color: brightness(2);
 }
 
 .searchbutton a {
@@ -698,9 +660,9 @@ abbr {
   padding-left: 5px;
 }
 
-.fa-heart, .empty {
+.fa-heart, .empty, .gris {
   position: absolute;
-  top: 45%;
+  top: 20%;
   left: 85%;
   color: #FFFFFF;
   background-color: #FFFFFF;
@@ -713,14 +675,16 @@ abbr {
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
   animation-name: direction;
-  animation-direction: alternate-reverse;
+  position: absolute;
+}
+
+.gris {
+  background-color: rgb(246, 246, 246);
 }
 
 .fa-heart::before {
   font-weight: bold;
   transition: color 1s ease-out;
-  animation-name: direction;
-  animation-direction: alternate-reverse;
 }
 
 .fa-heart:hover::before {
@@ -728,8 +692,8 @@ abbr {
           background-clip: text;
   color: transparent;
   background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
-  animation-name: direction;
-  animation-direction: alternate-reverse;
+  -webkit-text-stroke-color: transparent;
+  -webkit-text-stroke-width: 0px;
 }
 
 .fa-left-long {
