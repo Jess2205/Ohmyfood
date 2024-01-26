@@ -63,12 +63,22 @@ nav {
     object-fit: cover;   
   }
 
-  .img-restaurant, .img-enchantee {
+  .img-restaurant  {
     width: 100%;
     object-fit:cover;   
   }
 
-  
+  .img-enchantee {
+    width: 100%;
+    height:265px;
+    object-fit: cover;
+  }
+
+  .img-enchantee-accueil {
+      width: 100%;
+      height:230px;
+      object-fit: cover;  
+  }
   
   .image-txt {
       position: absolute;
