@@ -229,7 +229,7 @@ nav {
      object-fit: cover;
 }
 
-.img-restaurant {
+.img-restaurant, .img-enchantee {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
