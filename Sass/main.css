@@ -400,14 +400,14 @@ ul {
 }
 
 .article {
-  width: 100%;
+  width: 90%;
   height: 72px;
   border: 2px solid blue;
   display: flex;
   justify-content: space-between;
   align-content: flex-start;
   flex-direction: column;
-  width: 90%;
+  width: 100%;
   flex-wrap: wrap;
   margin: 0;
   overflow: hidden;
@@ -428,14 +428,15 @@ ul {
   border-radius: 15.04px;
   box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
   align-items: end;
   overflow: hidden;
 }
 
-.plats :hover {
-  width: 40%;
-  margin: 0;
+.menu:hover .plats .validation {
+  width: 80px;
+  position: relative;
+  align-items: flex-start;
 }
 
 .menu-txt {
@@ -454,10 +455,10 @@ ul {
   width: 30px;
   border: 2px solid yellow;
   position: relative;
-  top: 5px;
+  top: 24px;
   font-weight: 700;
-  font-size: 0.9em;
-  padding-right: 10px;
+  font-size: 0.85em;
+  padding-right: 5px;
 }
 
 .accompagnement {
@@ -465,7 +466,7 @@ ul {
   position: relative;
   bottom: 15px;
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 0.85rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -476,7 +477,7 @@ ul {
   position: relative;
   bottom: 5px;
   font-weight: 700;
-  font-size: 0.9em;
+  font-size: 0.95em;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -500,31 +501,27 @@ ul {
 }
 
 .validation {
-  width: 25%;
+  width: 30px;
   display: flex;
+  position: relative;
   justify-content: space-around;
-  align-items: end;
+  align-items: flex-start;
   border: 2px solid red;
   position: relative;
-  right: -10px;
-  transform: translateX(50px);
-  -webkit-transform: translateX(50px);
-  -moz-transform: translateX(50px);
-  -ms-transform: translateX(50px);
-  -o-transform: translateX(50px);
+  transform: translateX(1px);
+  -webkit-transform: translateX(1px);
+  -moz-transform: translateX(1px);
+  -ms-transform: translateX(1px);
+  -o-transform: translateX(1px);
 }
 
 .validation:hover {
   transform: translateX(0);
   transition-duration: all 5s ease;
-}
-
-.vide {
-  width: 1px;
-  height: 60px;
-  display: block;
-  border: 2px solid green;
-  position: relative;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
 
 .entrees, .plates, .desserts {
@@ -749,8 +746,9 @@ abbr {
 }
 
 .fa-check-circle {
-  width: 16px;
-  margin-right: 20px;
+  position: relative;
+  right: 5px;
+  margin-left: 10px;
   border-radius: 15px;
   color: #FFFFFF;
   justify-content: center;

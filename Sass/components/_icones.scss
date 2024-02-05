@@ -126,8 +126,9 @@
   }
 
   .fa-check-circle {
-	  width:16px;
-	  margin-right: 20px;
+    position: relative;
+    right: 5px;
+	  margin-left: 10px;
 	  border-radius:15px;
 	  color: #FFFFFF;
 	  justify-content: center;
@@ -138,6 +139,7 @@
 	  -moz-border-radius:15px;
 	  -ms-border-radius:15px;
 	  -o-border-radius:15px;
+    
 }
 
   .fa-handshake-simple {
