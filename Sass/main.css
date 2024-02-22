@@ -378,7 +378,7 @@ ul {
 }
 
 .menu {
-  width: 90%;
+  width: 95%;
   height: 72px;
   border: 2px solid blue;
   display: flex;
@@ -387,7 +387,7 @@ ul {
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: space-between;
-  padding: 0.5rem;
+  padding: 0.1rem;
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
@@ -442,7 +442,7 @@ ul {
 .menu-txt {
   border: 2px solid blue;
   height: 69px;
-  width: 85%;
+  width: 98%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -456,6 +456,7 @@ ul {
   border: 2px solid yellow;
   position: relative;
   top: 24px;
+  left: 5px;
   font-weight: 700;
   font-size: 0.85em;
   padding-right: 5px;
@@ -466,7 +467,7 @@ ul {
   position: relative;
   bottom: 15px;
   font-weight: 500;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
@@ -498,10 +499,11 @@ ul {
   -moz-transition: all 0.5s;
   -ms-transition: all 0.5s;
   -o-transition: all 0.5s;
+  overflow: hidden;
 }
 
 .validation {
-  width: 30px;
+  width: 0px;
   display: flex;
   position: relative;
   justify-content: space-around;
@@ -754,7 +756,6 @@ abbr {
   justify-content: center;
   align-items: center;
   display: flex;
-  overflow: hidden;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   -ms-border-radius: 15px;

@@ -126,20 +126,19 @@
   }
 
   .fa-check-circle {
-    position: relative;
-    right: 5px;
+	  position: relative;
+    
+	  right: 5px;
 	  margin-left: 10px;
 	  border-radius:15px;
 	  color: #FFFFFF;
 	  justify-content: center;
 	  align-items: center;
-	  display: flex;
-	  overflow: hidden;
+	  display: flex;	  
 	  -webkit-border-radius:15px;
 	  -moz-border-radius:15px;
 	  -ms-border-radius:15px;
 	  -o-border-radius:15px;
-    
 }
 
   .fa-handshake-simple {
