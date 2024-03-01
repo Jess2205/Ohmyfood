@@ -1,0 +1,73 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.loader-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; // Fond blanc
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 3s ease; // Transition pour laisser le fond blanc visible pendant la transition
+}
+
+.loader {
+    border: 16px solid #f3f3f3;
+    border-top: 16px solid  rgba(234, 234, 234, 1);    
+    background-image: linear-gradient(#9356DA,#FF79DA);
+   
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 3s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform:rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+.content {
+    padding: 20px;
+}
+
+.loader-container.loaded {
+    opacity: 0; // Lorsque la classe .loaded est ajoutée, le loader-container devient transparent
+    pointer-events: none; // Empêche les clics sur le fond blanc pendant la transition
+}
+
+.content {
+    padding: 20px;
+}
+
+// Ajout de l'animation pour le loader
+@keyframes fadeOut {
+    0% { opacity: 1; }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+#loader.loaded {
+    display: none;
+}
+
+#content.loaded {
+    display: block;
+}
+
+#loader.loaded + #content {
+    display: block;
+}
+
+.loader-container {
+    animation: fadeOut 3s forwards;
+}
