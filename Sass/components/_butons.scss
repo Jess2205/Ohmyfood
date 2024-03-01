@@ -9,7 +9,7 @@
   }
   
   .searchbutton {
-   display: flex;
+   display:flex;
    align-items: center;
    align-content: center;
    justify-content: center;
@@ -23,10 +23,10 @@
    -ms-border-radius: 25px;
    -o-border-radius: 25px;
    box-shadow: 0px 4px 10px 0px #00000040;
-   width: 218px;
+   width: 78%;
    height: 50px;
    align-items: center;
-   margin-left: 60px;
+   margin-left:40px;
    font-size: 16px;
    font-weight: 500;
    line-height: 19px;
@@ -49,8 +49,9 @@
 
 .searchbutton a {
   color: #fff;
-  width: 100%;
-  padding: 15px;
+  width: 78%;
+ justify-content: center;
+ align-items: center;
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;

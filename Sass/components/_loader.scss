@@ -10,12 +10,14 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; // Fond blanc
+    background-color: #fff; 
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    transition: opacity 3s ease; // Transition pour laisser le fond blanc visible pendant la transition
+    
+    overflow: hidden;
+    transition: opacity 3s ease;  
 }
 
 .loader {
@@ -41,15 +43,15 @@ html, body {
 }
 
 .loader-container.loaded {
-    opacity: 0; // Lorsque la classe .loaded est ajoutée, le loader-container devient transparent
-    pointer-events: none; // Empêche les clics sur le fond blanc pendant la transition
+    opacity: 0; 
+    pointer-events: none; 
 }
 
 .content {
     padding: 20px;
 }
 
-// Ajout de l'animation pour le loader
+
 @keyframes fadeOut {
     0% { opacity: 1; }
     75% { opacity: 1; }
