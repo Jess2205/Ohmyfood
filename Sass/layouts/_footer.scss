@@ -1,5 +1,12 @@
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 .logo_footer {
-    font-family: Shrikhand;
+    font-family: "Shrikhand";
     font-size: 18px;
     font-style: italic;
     font-weight: 400;
@@ -8,38 +15,36 @@
     text-align: left;
     padding-left: 20px;
     margin-top: 0;
-    width: 139px;
-    -webkit-filter:invert(100%);
+    width: 119px;
+    -webkit-filter:invert(110%);
 }
 
 footer {
     background: rgba(53, 53, 53, 1);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 15px;
+    padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
-   
-  }
+}
+
+.links {
+    margin: 0;
+}
 
 .footer-container {
     width: 100%;
 }
 
 .footer_restaurants {
-   
     background: rgba(53, 53, 53, 1);
     padding-top: 30px;
     padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
     width: 100%;
+    height: 42%;
     top:-70px;
-   
 }
-
-   
-
-
 
 .footer-title {
     color: #f2f2f2;

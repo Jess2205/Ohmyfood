@@ -8,11 +8,11 @@
     padding-left: 30px; 
   }
 
-  abbr {
+abbr {
     border: none;
   }
 
-  .fa-mobile-screen-button, .fa-list, .fa-store {
+.fa-mobile-screen-button, .fa-list, .fa-store {
     height: 72.38px;
     display: flex;
     text-align: left;
@@ -29,15 +29,14 @@
     background: #F6F6F6;
     box-shadow: 0px 4px 15px 0px #00000026;
     margin-bottom: 15px;
-    z-index: 1; 
-   
+    z-index: 1;  
   }
 
-  .fa-store {
+.fa-store {
     color: #9356DC;
   }
 
-  .icone-txt {
+.icone-txt {
     color: black;    
     padding-left: 20px;
     font-size: 16px;
@@ -47,7 +46,7 @@
     text-align: left;  
   }  
   
-  .ellipse {
+.ellipse {
     width: 24px;
     height: 24px;   
     background-color:#9356DC;
@@ -65,13 +64,13 @@
     margin-left: 10px;   
   }
 
-  .numero {   
+.numero {   
     position : absolute;
     margin : 2px;
     padding-left : 5px;    
   }
 
-  .fa-heart, .empty, .gris {
+.fa-heart, .empty, .gris {
     position: absolute;
     top: 18%;
     left: 85%;
@@ -89,50 +88,42 @@
     position: absolute;  
   }
 
-  .gris {
+.gris {
     background-color:rgba(246, 246, 246, 1);
     padding-top: 10px;
     left:260px;
   }
 
-  .fa-heart::before {
+.fa-heart::before {
     font-weight: bold;
     transition: opacity 1.5s ease;
     -webkit-transition: opacity 1.5s ease;
     -moz-transition: opacity 1.5s ease;
     -ms-transition: opacity 1.5s ease;
     -o-transition: opacity 1.5s ease;
-    vertical-align: baseline;
-    
-}
+    vertical-align: baseline; 
+  }
 
-  .fa-heart:hover::before{
+.fa-heart:hover::before{
     background-clip: text;
     color:transparent ;
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%); 
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: 0px;
-    
-    
-    
-    
-
   }
   
-
-  .fa-left-long {
+.fa-left-long {
     color: black;
     margin-left: 20px;
     font-size: 25px;   
   }
 
-  .fa-utensils, .fa-handshake-simple {
+.fa-utensils, .fa-handshake-simple {
     font-size: 12px;
   }
 
-  .fa-check-circle {
+.fa-check-circle {
 	  position: relative;
-    
 	  right: 5px;
 	  margin-left: 10px;
 	  border-radius:15px;
@@ -144,9 +135,9 @@
 	  -moz-border-radius:15px;
 	  -ms-border-radius:15px;
 	  -o-border-radius:15px;
-}
+  }
 
-  .fa-handshake-simple {
+.fa-handshake-simple {
     transform: rotate(-30deg);
     -webkit-transform: rotate(-30deg);
     -moz-transform: rotate(-30deg);

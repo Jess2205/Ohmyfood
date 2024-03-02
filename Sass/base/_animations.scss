@@ -1,6 +1,6 @@
+//Animation pour le check//
+
 @keyframes transleteX {
-    
-  
     0% {
         transform: translateX(0px);
         -webkit-transform: translateX(0px);
@@ -8,7 +8,7 @@
         -ms-transform: translateX(0px);
         -o-transform: translateX(0px);
         animation-timing-function: linear 10s;
-}
+      }
     50% {
       transform: translateX(240px);
       -webkit-transform: translateX(240px);
@@ -16,7 +16,7 @@
       -ms-transform: translateX(240px);
       -o-transform: translateX(240px);
       animation-timing-function: linear 10s;
-}
+      }
     100% {
         transform: translateX(349px);
         -webkit-transform: translateX(349px);
@@ -24,8 +24,10 @@
         -ms-transform: translateX(349px);
         -o-transform: translateX(349px);
         animation-timing-function: linear 10s;
-}
-}
+      }
+    }
+
+//Animation pour apparition des menus//
 
 @keyframes apparition {
     0% {
@@ -35,8 +37,7 @@
         -moz-transform:translateY(20px);
         -ms-transform:translateY(20px);
         -o-transform:translateY(20px);
-}
-    
+      }
       to {
         opacity:1;
         transform:translateY(0);
@@ -44,8 +45,10 @@
         -moz-transform:translateY(0);
         -ms-transform:translateY(0);
         -o-transform:translateY(0);
-}
+      }
     }
+
+//Animation pour les boutons//
 
 @keyframes opacity {
       0% {
@@ -56,17 +59,18 @@
         }
       }
         
+//Animation pour les menus//
 
 @keyframes retract {
     0% {
-        transform: scaleX(0)     ;
-        -webkit-transform: scaleX(0)     ;
-        -moz-transform: scaleX(0)     ;
-        -ms-transform: scaleX(0)     ;
-        -o-transform: scaleX(0)     ;
+        transform: scaleX(0);
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
         right: 0%;
         left: 0%;
-}
+      }
       100% {
         transform:scaleX(1) ;
         -webkit-transform:scaleX(1) ;
@@ -75,8 +79,8 @@
         -o-transform:scaleX(1) ;
         right: 100%;
         left: 0%;
-}
-      
-}
+      }
+    }
+
 
 

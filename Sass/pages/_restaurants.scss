@@ -1,0 +1,63 @@
+.lapalette {
+  width: 100%;
+}
+
+.logopages {
+  display: flex;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+}
+
+.lapalette, .enchantee {
+    position: relative;
+    width: 100%; 
+  }
+
+.enchantee {
+    width: 100%; 
+  }
+
+.titre_menus_madagascar {
+    position:relative;
+    bottom:5px;
+    font-weight: 700;
+    font-size: 1em;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 45px;
+  }
+
+.img-restaurant  {
+    width: 100%;
+    object-fit:cover;
+    height: 300px;
+    object-position: 50% 70%;
+  }
+
+.img-enchantee {
+    width: 100%;
+    height:265px;
+    object-fit: cover;
+  }
+
+.img-enchantee-accueil {
+      width: 100%;
+      height:230px;
+      object-fit: cover;  
+  }
+
+.accompagnement-madagascar  {
+    position:relative;
+    bottom:15px;
+    font-weight: 500;
+    font-size: 0.860rem;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 70px;  
+  }
+
+  
+  

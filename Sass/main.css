@@ -48,27 +48,9 @@
   box-sizing: border-box;
 }
 
-#footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-}
-
 a {
   color: black;
   text-decoration: none;
-}
-
-.lapalette {
-  width: 100%;
-}
-
-.logopages {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
 }
 
 ul {
@@ -77,8 +59,24 @@ ul {
   list-style-type: none;
 }
 
+b {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18.75px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .logo_footer {
-  font-family: Shrikhand;
+  font-family: "Shrikhand";
   font-size: 18px;
   font-style: italic;
   font-weight: 400;
@@ -87,16 +85,20 @@ ul {
   text-align: left;
   padding-left: 20px;
   margin-top: 0;
-  width: 139px;
-  -webkit-filter: invert(100%);
+  width: 119px;
+  -webkit-filter: invert(110%);
 }
 
 footer {
   background: rgb(53, 53, 53);
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 15px;
+  padding-bottom: 10px;
   font-size: 18px;
   position: relative;
+}
+
+.links {
+  margin: 0;
 }
 
 .footer-container {
@@ -110,6 +112,7 @@ footer {
   font-size: 18px;
   position: relative;
   width: 100%;
+  height: 42%;
   top: -70px;
 }
 
@@ -135,8 +138,9 @@ footer {
 
 .search-bar {
   display: flex;
+  margin: auto;
   justify-content: center;
-  padding-left: 50px;
+  font-size: 16px;
 }
 
 #logo {
@@ -145,7 +149,9 @@ footer {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 50%;
+  margin: auto;
+  padding: 10px;
 }
 
 .sub-title {
@@ -157,11 +163,14 @@ footer {
   line-height: 21px;
   letter-spacing: 0em;
   padding-bottom: 10px;
+  margin: auto;
 }
 
 nav {
+  display: flex;
   width: 100%;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
 }
@@ -169,23 +178,18 @@ nav {
 body {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
   position: relative;
   margin-left: 0;
   margin-right: 0;
 }
 
-nav {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .main-container {
   width: 100%;
   max-width: 767.99px;
   box-sizing: border-box;
-  height: 1600px;
+  height: 100%;
 }
 
 .explorer {
@@ -205,9 +209,9 @@ nav {
 }
 
 .menus {
-  background-color: #F2F4F4;
-  padding-left: 5px;
-  padding-right: 5px;
+  background-color: rgb(246, 246, 246);
+  padding-left: 15px;
+  padding-right: 15px;
   padding-top: 30px;
   padding-bottom: 50px;
 }
@@ -231,29 +235,6 @@ nav {
      object-fit: cover;
 }
 
-.img-restaurant {
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  height: 300px;
-  -o-object-position: 50% 70%;
-     object-position: 50% 70%;
-}
-
-.img-enchantee {
-  width: 100%;
-  height: 265px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.img-enchantee-accueil {
-  width: 100%;
-  height: 230px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
 .image-txt {
   position: absolute;
   z-index: 1;
@@ -262,7 +243,7 @@ nav {
   color: rgb(0, 135, 102);
   font-size: 20px;
   font-weight: bold;
-  font-family: Roboto;
+  font-family: "Roboto";
   font-size: 14px;
   font-weight: 500;
   line-height: 16px;
@@ -308,15 +289,6 @@ nav {
   text-align: left;
 }
 
-b {
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 18.75px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #FFFFFF;
-}
-
 .links {
   list-style: none;
   padding-bottom: 10px;
@@ -342,15 +314,6 @@ b {
   top: -70px;
 }
 
-.lapalette, .enchantee {
-  position: relative;
-  width: 100%;
-}
-
-.enchantee {
-  width: 100%;
-}
-
 .titre_lacarte_coeur {
   position: relative;
   width: 95%;
@@ -371,21 +334,16 @@ b {
   width: 100%;
 }
 
-ul {
-  text-decoration: none;
-  padding: 0;
-  list-style-type: none;
-}
-
 .menu {
-  width: 97%;
+  width: 98%;
   height: 72px;
+  margin: auto;
   display: flex;
-  align-content: flex-start;
+  align-content: center;
   align-items: center;
   flex-wrap: wrap;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0.1rem;
   margin: 0;
   overflow: hidden;
@@ -467,17 +425,6 @@ ul {
   padding-right: 10px;
 }
 
-.accompagnement-madagascar {
-  position: relative;
-  bottom: 15px;
-  font-weight: 500;
-  font-size: 0.86rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 70px;
-}
-
 .titre_menus {
   position: relative;
   bottom: 5px;
@@ -487,59 +434,6 @@ ul {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 20px;
-}
-
-.titre_menus_madagascar {
-  position: relative;
-  bottom: 5px;
-  font-weight: 700;
-  font-size: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 45px;
-}
-
-.check {
-  width: 60px;
-  background-color: rgb(153, 226, 208);
-  position: relative;
-  height: 40px;
-  padding: 15px 12px;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  margin: 0;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
-  overflow: hidden;
-  margin-left: 10px;
-}
-
-.validation {
-  width: 0px;
-  display: flex;
-  position: relative;
-  justify-content: space-around;
-  align-items: flex-start;
-  position: relative;
-  transform: translateX(1px);
-  -webkit-transform: translateX(1px);
-  -moz-transform: translateX(1px);
-  -ms-transform: translateX(1px);
-  -o-transform: translateX(1px);
-}
-
-.validation:hover {
-  transform: translateX(0);
-  transition-duration: all 5s ease;
-  -webkit-transform: translateX(0px);
-  -moz-transform: translateX(0px);
-  -ms-transform: translateX(0px);
-  -o-transform: translateX(0px);
 }
 
 .entrees, .plates, .desserts {
@@ -563,6 +457,10 @@ ul {
 .commander {
   padding-top: 15px;
   padding-bottom: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .carte {
@@ -604,12 +502,10 @@ ul {
   -ms-border-radius: 25px;
   -o-border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
-  width: 78%;
+  width: 60%;
   height: 50px;
-  align-items: center;
   margin-left: 40px;
   font-size: 16px;
-  font-weight: 500;
   line-height: 19px;
   letter-spacing: 0em;
   border: none;
@@ -618,13 +514,14 @@ ul {
   -moz-transition: background-color 250ms;
   -ms-transition: background-color 250ms;
   -o-transition: background-color 250ms;
+  margin: auto;
 }
 
 .searchbutton a:hover {
-  transition-property: all 2s;
-  box-shadow: outset 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
+  border-image-outset: 0px 4px 10px 0px;
   opacity: 0.8;
-  background-color: brightness(2);
+  filter: brightness(2);
+  -webkit-filter: brightness(2);
 }
 
 .searchbutton a {
@@ -637,6 +534,48 @@ ul {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+}
+
+.check {
+  width: 60px;
+  background-color: rgb(153, 226, 208);
+  position: relative;
+  height: 40px;
+  padding: 15px 12px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  overflow: hidden;
+  margin-left: 10px;
+}
+
+.validation {
+  width: 0px;
+  display: flex;
+  position: relative;
+  justify-content: space-around;
+  align-items: flex-start;
+  position: relative;
+  transform: translateX(1px);
+  -webkit-transform: translateX(1px);
+  -moz-transform: translateX(1px);
+  -ms-transform: translateX(1px);
+  -o-transform: translateX(1px);
+}
+
+.validation:hover {
+  transform: translateX(0);
+  transition-duration: 5s;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
 }
 
 .fa-location-dot {
@@ -799,7 +738,7 @@ html, body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: rgb(234, 234, 234);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -809,23 +748,19 @@ html, body {
 }
 
 .loader {
-  border: 16px solid #f3f3f3;
-  border-top: 16px solid rgb(234, 234, 234);
-  background-image: linear-gradient(#9356DA, #FF79DA);
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #9356DA;
+  border-left: 8px solid #FF79DA;
+  border-bottom: 8px solid #9356DA;
+  border-right: 8px solid #FF79DA;
+  background-image: url(/Assets/Images/logo/ohmyfood@2x.svg);
   border-radius: 50%;
-  width: 120px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
   animation: spin 3s linear infinite;
+  -webkit-animation: spin 3s linear infinite;
 }
 
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 .content {
   padding: 20px;
 }
@@ -839,20 +774,6 @@ html, body {
   padding: 20px;
 }
 
-@keyframes fadeOut {
-  0% {
-    opacity: 1;
-    z-index: 1;
-  }
-  75% {
-    opacity: 1;
-    z-index: 2;
-  }
-  100% {
-    opacity: 0;
-    z-index: 0;
-  }
-}
 #loader.loaded {
   display: none;
 }
@@ -867,10 +788,99 @@ html, body {
 
 .loader-container {
   animation: fadeOut 3s forwards;
+  -webkit-animation: fadeOut 3s forwards;
 }
 
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    z-index: 1;
+  }
+  75% {
+    opacity: 1;
+    z-index: 2;
+  }
+  100% {
+    opacity: 0;
+    z-index: 0;
+  }
+}
 input {
   border: none;
   justify-content: center;
   background-color: #EAEAEA;
+  margin: auto;
+}
+
+.lapalette {
+  width: 100%;
+}
+
+.logopages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.lapalette, .enchantee {
+  position: relative;
+  width: 100%;
+}
+
+.enchantee {
+  width: 100%;
+}
+
+.titre_menus_madagascar {
+  position: relative;
+  bottom: 5px;
+  font-weight: 700;
+  font-size: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 45px;
+}
+
+.img-restaurant {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  -o-object-position: 50% 70%;
+     object-position: 50% 70%;
+}
+
+.img-enchantee {
+  width: 100%;
+  height: 265px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.img-enchantee-accueil {
+  width: 100%;
+  height: 230px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accompagnement-madagascar {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 0.86rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 70px;
 }/*# sourceMappingURL=main.css.map */

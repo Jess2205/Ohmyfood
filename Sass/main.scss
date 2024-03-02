@@ -26,13 +26,14 @@
 // 5. Components
 @import
   'components/butons',
+  'components/check',
   'components/icones',
   'components/loader',
   'components/inputs';
 
 // 6. Page-specific styles
 @import
-  'pages/contact',
+  'pages/restaurants',
   'pages/home';
 
 // 7. Themes

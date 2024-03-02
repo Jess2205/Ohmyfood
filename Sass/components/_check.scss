@@ -1,0 +1,42 @@
+.check {
+    width: 60px;
+    background-color:rgba(153, 226, 208, 1);
+    position: relative;
+    height:40px;
+    padding: 15px 12px;    
+    justify-content:center;
+    align-items: center;
+    display: flex;
+    margin: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    overflow: hidden;
+    margin-left: 10px;    
+  }
+  
+.validation {
+    width:0px;
+    display:flex;
+    position: relative;
+    justify-content:space-around;
+    align-items:flex-start;
+    position:relative;
+    transform:translateX(1px);
+    -webkit-transform:translateX(1px);
+    -moz-transform:translateX(1px);
+    -ms-transform:translateX(1px);
+    -o-transform:translateX(1px);   
+  }
+  
+.validation:hover {
+    transform:translateX(0);
+    transition-duration: 5s;
+    -webkit-transform:translateX(0px);
+    -moz-transform:translateX(0px);
+    -ms-transform:translateX(0px);
+    -o-transform:translateX(0px);
+  }
+  

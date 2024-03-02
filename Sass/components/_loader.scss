@@ -10,33 +10,28 @@ html, body {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #fff; 
+    background-color:rgba(234, 234, 234, 1);
     display: flex;
     justify-content: center;
     align-items: center;
     opacity: 1;
-    
     overflow: hidden;
     transition: opacity 3s ease;  
 }
 
 .loader {
-    border: 16px solid #f3f3f3;
-    border-top: 16px solid  rgba(234, 234, 234, 1);    
-    background-image: linear-gradient(#9356DA,#FF79DA);
-   
+    border: 8px solid #f3f3f3;
+    border-top: 8px solid #9356DA ;
+    border-left:8px solid #FF79DA;
+    border-bottom: 8px solid #9356DA ;
+    border-right:8px solid #FF79DA;
+    background-image: url(/Assets/Images/logo/ohmyfood@2x.svg);
     border-radius: 50%;
-    width: 120px;
-    height: 120px;
+    width: 200px;
+    height: 200px;
     animation: spin 3s linear infinite;
+    -webkit-animation: spin 3s linear infinite;
 }
-
-@keyframes spin {
-    0% { transform:rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-
 
 .content {
     padding: 20px;
@@ -49,13 +44,6 @@ html, body {
 
 .content {
     padding: 20px;
-}
-
-
-@keyframes fadeOut {
-    0% { opacity: 1; z-index: 1;}
-    75% { opacity: 1;z-index: 2; }
-    100% { opacity: 0; z-index: 0;}
 }
 
 #loader.loaded {
@@ -72,4 +60,18 @@ html, body {
 
 .loader-container {
     animation: fadeOut 3s forwards;
+    -webkit-animation: fadeOut 3s forwards;
+}
+
+//Animation pour le loader//
+
+@keyframes spin {
+    0% { transform:rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+  0% { opacity: 1; z-index: 1;}
+  75% { opacity: 1;z-index: 2; }
+  100% { opacity: 0; z-index: 0;}
 }

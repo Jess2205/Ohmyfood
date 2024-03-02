@@ -1,57 +1,49 @@
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 100%;
     position: relative;
     margin-left: 0;
-    margin-right: 0;
-    
-  }
-  
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
+    margin-right: 0;  
   }
 
-  .main-container {
+.main-container {
     width: 100%;
     max-width: 767.99px;
     box-sizing: border-box;
-    height: 1600px;
+    height: 100%;
   }
 
-  .explorer{
+.explorer {
     width: 100%;
     padding-bottom: 30px;
     background-color: #F2F4F4;
     padding-top: 20px;
   }
 
-  .etape {
+.etape {
     padding-left : 15px;
   }
 
-  .fonctionnement {
+.fonctionnement {
     padding-top: 30px;
     padding-bottom: 50px;
   }
 
-  .menus {
-    background-color: #F2F4F4;
-    padding-left: 5px;
-    padding-right: 5px;
+.menus {
+    background-color:rgba(246, 246, 246, 1);
+    padding-left: 15px;
+    padding-right: 15px;
     padding-top: 30px;
     padding-bottom: 50px;
   }
 
-  
-  .section-title3{
+.section-title3{
     padding-left: 5px; 
   }
   
-  .carte img {
+.carte img {
     display: flex;
     width: 100%;
     height: 150px;
@@ -65,93 +57,62 @@ nav {
     object-fit: cover;   
   }
 
-  .img-restaurant  {
-    width: 100%;
-    object-fit:cover;
-    height: 300px;
-    object-position: 50% 70%;
-    
+.image-txt {
+    position: absolute;
+    z-index: 1;
+    top: 10%;
+    left: 70%;
+    color:rgba(0, 135, 102, 1);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: center;
+    background: rgba(153, 226, 208, 1);
+    padding: 5px 10px;
   }
 
-  .img-enchantee {
-    width: 100%;
-    height:265px;
-    object-fit: cover;
-  }
-
-  .img-enchantee-accueil {
-      width: 100%;
-      height:230px;
-      object-fit: cover;  
-  }
-  
-  .image-txt {
-      position: absolute;
-      z-index: 1;
-      top: 10%;
-      left: 70%;
-      color:rgba(0, 135, 102, 1);
-      font-size: 20px;
-      font-weight: bold;
-      font-family: Roboto;
-      font-size: 14px;
-      font-weight: 500;
-      line-height: 16px;
-      letter-spacing: 0em;
-      text-align: center;
-      background: rgba(153, 226, 208, 1);
-      padding: 5px 10px;
-  }
-
-  .carte {
+.carte {
     width: 100%;
   }
   
-  .cartes {
+.cartes {
     display: flex;
     flex-direction: column;
     gap: 18px;   
   }
   
-  .carte-txt {
+.carte-txt {
     padding-top: 10px;
     padding-left: 10px;
     position: relative;
     padding-bottom: 10px;
   }
 
-  .carte-title {
+.carte-title {
     margin-bottom: 5px;
     margin-top: 0;
     font-size: 18px;
     font-weight: 700;
     line-height: 21px;
     letter-spacing: 0em;
-    text-align: left; 
-     
+    text-align: left;    
   }
 
-  .carte-subtitle {
+.carte-subtitle {
     margin-top: 0;
     font-size: 17px;
     font-weight: 300;
     line-height: 20px;
     letter-spacing: 0em;
-    text-align: left; 
-    
+    text-align: left;   
   }
 
-  b {    
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 18.75px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #FFFFFF;
-    
-  }
   
-  .links {
+.links {
     list-style : none;
     padding-bottom : 10px;
     width : 100%; 
@@ -160,43 +121,29 @@ nav {
     width: 80%;
   }
 
-  
-  .lacarte {
+.lacarte {
     background: rgba(246, 246, 246, 1);
     border-radius:25px 25px 0px 0px ;
     -webkit-border-radius:25px 25px 0px 0px ;
     -moz-border-radius:25px 25px 0px 0px ;
     -ms-border-radius:25px 25px 0px 0px ;
     -o-border-radius:25px 25px 0px 0px ;
-    
     position: relative;
     width:100%;
     bottom: 30px;    
     z-index: 1;
     padding-bottom: 30px;
     margin: 0;
-    
     top: -70px;
-   
   }
 
-  .lapalette, .enchantee {
-    position: relative;
-    width: 100%; 
-  }
-
-  .enchantee {
-    width: 100%; 
-  }
-
-  .titre_lacarte_coeur {
+.titre_lacarte_coeur {
     position: relative;
     width: 95%;
     padding-left: 15px;
-   
   }
 
-  .titre_lacarte {
+.titre_lacarte {
     font-family: "Shrikhand";
     font-size: 22px;
     font-style: italic;
@@ -208,237 +155,117 @@ nav {
     position: relative;
     padding-right: 0; 
     width: 100%;
-   
-    
   }
 
-  ul {
-    text-decoration: none;
-    padding: 0;
-    list-style-type: none;
+.menu {
+    width: 98%;
+    height: 72px;
+    margin: auto;
+    display:flex;
+    align-content:center;
+    align-items:center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content:center;
+    padding: 0.1rem;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition:all 0.5s;
+    -webkit-transition:all 0.5s;
+    -moz-transition:all 0.5s;
+    -ms-transition:all 0.5s;
+    -o-transition:all 0.5s;
+} 
+
+.article {
+    height: 72px;
+    display:flex;
+    justify-content: space-between;
+    align-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    transition:all 0.5s ;
+    -webkit-transition:all 0.5s ;
+    -moz-transition:all 0.5s ;
+    -ms-transition:all 0.5s ;
+    -o-transition:all 0.5s ;
   } 
-  
-  
-  .menu  {
-  width: 97%;
-  height: 72px;
- 
-  display:flex;
- 
-  align-content: flex-start;
-  align-items:center;
-  
-  flex-wrap: wrap;
-  
-  flex-direction: column;
-  
-  justify-content: space-between;
- 
-  padding: 0.1rem;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition:all 0.5s ;
-  -webkit-transition:all 0.5s ;
-  -moz-transition:all 0.5s ;
-  -ms-transition:all 0.5s ;
-  -o-transition:all 0.5s ;
-} 
-  .article {
- 
-  height: 72px;
-  
-  display:flex;
-  justify-content: space-between;
-  align-content: flex-start;
-  flex-direction: column;
-  width: 100%;
-  
- 
-  flex-wrap: wrap;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition:all 0.5s ;
-  -webkit-transition:all 0.5s ;
-  -moz-transition:all 0.5s ;
-  -ms-transition:all 0.5s ;
-  -o-transition:all 0.5s ;
-} 
+   
+.plats {
+    width:100%;
+    height:69px;
+    background: rgba(255, 255, 255, 1);
+    border-radius: 15.04px;
+    box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
+    display:flex;
+    justify-content:flex-end;
+    align-items:end;
+    overflow: hidden;    
+  }
    
   
-  
-  .plats{
-      width:100%;
-      height:69px;
-      
-      background: rgba(255, 255, 255, 1);
-      border-radius: 15.04px;
-      box-shadow: 0px 4.011494159698486px 15.043103218078613px 0px rgba(0, 0, 0, 0.1);
-      display:flex;
-      justify-content:flex-end;
-      align-items:end;
-      overflow: hidden;
-      
-}
-   
-  
- .menu:hover .plats .validation {
+.menu:hover .plats .validation {
     width:80px;
     position: relative;
     align-items: flex-start;
-   
   }
 
-
 .menu-txt {
-   
-   height:75px;
-   width: 100%;
-  margin-left: 10px;
-   display: flex;   
-   justify-content: space-between;
-   flex-direction: column;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-    
-   }
+    height:75px;
+    width: 100%;
+    margin-left: 10px;
+    display: flex;   
+    justify-content: space-between;
+    flex-direction: column;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
 
-   
-   
-  
-  .prix-txt {
+.prix-txt {
     width: 30px;
-    
     position:relative;
     top:24px;
     left: -2px;
     font-weight: 700;
-    font-size: 0.850em;
-    
-   
-    
-    
-     
+    font-size: 0.850em;  
   }
   
-  
-  
-  .accompagnement  {
-   
-   position:relative;
-   bottom:15px;
-   font-weight: 500;
-   font-size: 0.850rem;
-   overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   padding-right: 10px;
-   
-  }
-  .accompagnement-madagascar  {
+.accompagnement  {
     position:relative;
     bottom:15px;
     font-weight: 500;
-    font-size: 0.860rem;
+    font-size: 0.850rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    padding-right: 70px; 
-    
+    padding-right: 10px;
   }
-
-  .titre_menus {
-    
+ 
+.titre_menus {
     position:relative;
     bottom:5px;
     font-weight: 700;
     font-size: 1em;
     overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   padding-right: 20px;
-  
-   
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 20px;
   }
 
-  .titre_menus_madagascar {
-    
-    position:relative;
-    bottom:5px;
-    font-weight: 700;
-    font-size: 1em;
-    overflow: hidden;
-   white-space: nowrap;
-   text-overflow: ellipsis;
-   padding-right: 45px;
-  
-   
-  }
-  
-  .check {
-    width: 60px;
-    background-color:rgba(153, 226, 208, 1);
-    position: relative;
-    height:40px;
-    padding: 15px 12px;    
-    justify-content:center;
-    align-items: center;
-    display: flex;
-    margin: 0;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    overflow: hidden;
-    margin-left: 10px;
-    
-}
-
- 
-  
-  .validation {
-    width:0px;
-    display:flex;
-    position: relative;
-    justify-content:space-around;
-    align-items:flex-start;
-   
-    position:relative;
-    transform:translateX(1px);
-    -webkit-transform:translateX(1px);
-    -moz-transform:translateX(1px);
-    -ms-transform:translateX(1px);
-    -o-transform:translateX(1px);
-    
-}
-  
-  .validation:hover {
-    transform:translateX(0);
-    transition-duration: all 5s ease;
-    -webkit-transform:translateX(0px);
-    -moz-transform:translateX(0px);
-    -ms-transform:translateX(0px);
-    -o-transform:translateX(0px);
-    
-}
-  
- 
-  
- 
-  
-  
-
-  .entrees, .plates, .desserts {
+.entrees, .plates, .desserts {
     gap: 5px; 
     margin-left: 5px;
   }
 
-  .subtitle_lacarte {
+.subtitle_lacarte {
     font-family: "Roboto";
     font-size: 16px;
     font-weight: 300;
@@ -451,13 +278,16 @@ nav {
     padding-top: 10px;     
   }
   
-  
-  .commander {
+.commander {
     padding-top: 15px;
     padding-bottom: 15px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
-  .carte {
+.carte {
     display: flex;
     flex-direction: column;
     height: 220px;
@@ -465,5 +295,5 @@ nav {
     border-radius: 20px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-}
+  }
 
