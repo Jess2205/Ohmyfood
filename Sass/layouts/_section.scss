@@ -31,6 +31,8 @@ body {
     padding-bottom: 50px;
   }
 
+//Section menu sous forme de cartes//
+
 .menus {
     background-color:rgba(246, 246, 246, 1);
     padding-left: 15px;
@@ -85,7 +87,7 @@ body {
     gap: 18px;   
   }
   
-.carte-txt {
+.carte-txt, .carte-txt2 {
     padding-top: 10px;
     padding-left: 10px;
     position: relative;
@@ -297,3 +299,79 @@ body {
     -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
   }
 
+//Media query Desktop//
+@media (min-width: 1024px) and (max-width: 2000px){
+  
+  .main-container{
+    min-width: 1024px;
+    width: 100%;
+  }
+
+  .fonctionnement {
+    width: 100%;
+  }
+
+  .etape {
+    display:inline-block;
+    justify-content:center;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    padding-right: 20px;
+  }
+
+  .cartes {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+   
+  }
+
+  .carte, .enchantee, .lapalette {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    align-items: center;
+    flex-direction:row;
+    width: 400px;
+  }
+  
+  .img-enchantee-accueil, .img-lapalette-accueil {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200%;
+    position: absolute;
+    top: 0px;
+  }
+ 
+  .carte-txt2 {
+    top:41%;
+  }
+
+  .lacarte {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+
+  .titre_lacarte_coeur {
+    width: 30%;
+    align-items:center;   
+    margin: auto;    
+  }
+  
+  .menu, .subtitle_lacarte {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+
+  
+  
+  }

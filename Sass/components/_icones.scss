@@ -145,3 +145,16 @@ abbr {
     -o-transform: rotate(-30deg);
   }
 
+  @media (min-width: 1024px) and (max-width: 2000px) {
+    .fa-mobile-screen-button, .fa-list, .fa-store {
+      width: 90%; 
+    }
+
+    .fa-heart {
+      position: relative;
+      left: 350px;
+      bottom: 60px;
+    }
+
+    
+  }

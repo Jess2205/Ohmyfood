@@ -54,6 +54,12 @@
     -o-border-radius: 10px;
   }
   
+//Media query Desktop//
+@media (min-width: 1024px) and (max-width: 2000px){
+  .searchbutton {
+    width: 20%;
+  }
+}
 
  
   

@@ -6,7 +6,7 @@
     align-items:center;
     width: 50%; 
     margin:auto;
-    padding: 10px;     
+    padding: 20px;     
   }  
 
 .sub-title {
@@ -21,7 +21,22 @@
     margin: auto;
   }
 
-  
+  //Media query Desktop//
+@media (min-width: 1024px) and (max-width: 2000px){
+  #logo {
+    width: 20%;
+  }
+
+  .sub-title {
+    width: 42%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 1.9em;
+  }
+}
 
   
 

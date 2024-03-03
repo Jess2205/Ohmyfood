@@ -68,6 +68,14 @@ b {
   color: #FFFFFF;
 }
 
+::-moz-placeholder {
+  font-size: 16px;
+}
+
+::placeholder, input {
+  font-size: 16px;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -151,7 +159,7 @@ footer {
   align-items: center;
   width: 50%;
   margin: auto;
-  padding: 10px;
+  padding: 20px;
 }
 
 .sub-title {
@@ -166,6 +174,19 @@ footer {
   margin: auto;
 }
 
+@media (min-width: 1024px) and (max-width: 2000px) {
+  #logo {
+    width: 20%;
+  }
+  .sub-title {
+    width: 42%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .section-title {
+    font-size: 1.9em;
+  }
+}
 nav {
   display: flex;
   width: 100%;
@@ -263,7 +284,7 @@ body {
   gap: 18px;
 }
 
-.carte-txt {
+.carte-txt, .carte-txt2 {
   padding-top: 10px;
   padding-left: 10px;
   position: relative;
@@ -473,13 +494,73 @@ body {
   -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .main-container {
+    min-width: 1024px;
+    width: 100%;
+  }
+  .fonctionnement {
+    width: 100%;
+  }
+  .etape {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    padding-right: 20px;
+  }
+  .cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+  }
+  .carte, .enchantee, .lapalette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 400px;
+  }
+  .img-enchantee-accueil, .img-lapalette-accueil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200%;
+    position: absolute;
+    top: 0px;
+  }
+  .carte-txt2 {
+    top: 41%;
+  }
+  .lacarte {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+  .titre_lacarte_coeur {
+    width: 30%;
+    align-items: center;
+    margin: auto;
+  }
+  .menu, .subtitle_lacarte {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
 ::-moz-placeholder {
   color: var(--Black, #000);
   text-align: left;
   width: 100%;
   padding-left: 5px;
 }
-
 ::placeholder {
   color: var(--Black, #000);
   text-align: left;
@@ -536,6 +617,11 @@ body {
   -o-border-radius: 10px;
 }
 
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .searchbutton {
+    width: 20%;
+  }
+}
 .check {
   width: 60px;
   background-color: rgb(153, 226, 208);
@@ -726,6 +812,16 @@ abbr {
   -o-transform: rotate(-30deg);
 }
 
+@media (min-width: 1024px) and (max-width: 2000px) {
+  .fa-mobile-screen-button, .fa-list, .fa-store {
+    width: 90%;
+  }
+  .fa-heart {
+    position: relative;
+    left: 350px;
+    bottom: 60px;
+  }
+}
 html, body {
   margin: 0;
   padding: 0;
