@@ -159,7 +159,7 @@ body {
     width: 100%;
   }
 
-.menu {
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 {
     width: 98%;
     height: 72px;
     margin: auto;
@@ -266,6 +266,47 @@ body {
     gap: 5px; 
     margin-left: 5px;
   }
+  .menu1{
+    animation: decalage 2s;
+    -webkit-animation: decalage 2s;
+}
+ .menu2{
+     animation: decalage 2.5s;
+     -webkit-animation: decalage 2.5s;
+}
+ .menu3{
+     animation: decalage 3s;
+     -webkit-animation: decalage 3s;
+}
+ .menu4{
+    animation: decalage 3.5s;
+    -webkit-animation: decalage 3.5s;
+}
+ .menu5{
+     animation: decalage 4s;
+     -webkit-animation: decalage 4s;
+}
+ .menu6{
+     animation: decalage 4.5s;
+     -webkit-animation: decalage 4.5s;
+}
+ .menu7{
+    animation: decalage 5s;
+    -webkit-animation: decalage 5s;
+}
+ .menu8{
+     animation: decalage 5.5s;
+     -webkit-animation: decalage 5.5s;
+}
+ .menu9{
+     animation: decalage 6s;
+     -webkit-animation: decalage 6s;
+} 
+
+.menu10{
+  animation: decalage 6.5s;
+  -webkit-animation: decalage 6.5s;
+} 
 
 .subtitle_lacarte {
     font-family: "Roboto";
@@ -372,13 +413,13 @@ body {
     margin: auto;    
   }
   
-  .menu {
+  .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10  {
     width: 60%;
     justify-content: center;
     align-items: center;
     margin: auto;
     
-  }
+}
 
   .subtitle_lacarte {
     width: 5%;

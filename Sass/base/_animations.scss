@@ -1,3 +1,16 @@
+//Animation pour le loader//
+
+@keyframes spin {
+  0% { transform:rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes fadeOut {
+0% { opacity: 1; z-index: 1;}
+75% { opacity: 1;z-index: 2; }
+100% { opacity: 0; z-index: 0;}
+}
+
 //Animation pour le check//
 
 @keyframes transleteX {
@@ -29,24 +42,28 @@
 
 //Animation pour apparition des menus//
 
-@keyframes apparition {
-    0% {
-        opacity: 0;
-        transform:translateY(20px);
-        -webkit-transform:translateY(20px);
-        -moz-transform:translateY(20px);
-        -ms-transform:translateY(20px);
-        -o-transform:translateY(20px);
-      }
-      to {
-        opacity:1;
-        transform:translateY(0);
-        -webkit-transform:translateY(0);
-        -moz-transform:translateY(0);
-        -ms-transform:translateY(0);
-        -o-transform:translateY(0);
-      }
-    }
+@keyframes decalage {
+  from {
+    transition:all 1s  ;
+    -webkit-transition:all 1s  ;
+    -moz-transition:all 1s  ;
+    -ms-transition:all 1s  ;
+    -o-transition:all 1s  ;
+    margin-top: 3rem;
+    opacity: 0;
+}
+to {
+  transition: all 1s;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  margin-top: 0rem;
+  opacity: 1;
+}
+}
+
+
 
 //Animation pour les boutons//
 

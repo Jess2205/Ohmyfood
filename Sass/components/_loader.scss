@@ -63,15 +63,5 @@ html, body {
     -webkit-animation: fadeOut 3s forwards;
 }
 
-//Animation pour le loader//
 
-@keyframes spin {
-    0% { transform:rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
 
-@keyframes fadeOut {
-  0% { opacity: 1; z-index: 1;}
-  75% { opacity: 1;z-index: 2; }
-  100% { opacity: 0; z-index: 0;}
-}
