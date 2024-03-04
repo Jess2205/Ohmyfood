@@ -5,7 +5,7 @@
     height: 100%;
   }
 
-.logo_footer {
+.logo_footer, .logo_footer2 {
     font-family: "Shrikhand";
     font-size: 18px;
     font-style: italic;
@@ -16,15 +16,21 @@
     padding-left: 20px;
     margin-top: 0;
     width: 119px;
-    -webkit-filter:invert(110%);
+    -webkit-filter:invert(200%);
+    width: 30%;
+    height: 18px;
 }
+
 
 footer {
     background: rgba(53, 53, 53, 1);
-    padding-top: 15px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
+    height: auto;
+    margin: auto;
+   
 }
 
 .links {
@@ -37,13 +43,14 @@ footer {
 
 .footer_restaurants {
     background: rgba(53, 53, 53, 1);
-    padding-top: 30px;
+    padding-top: 20px;
     padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
     width: 100%;
     height: 42%;
     top:-70px;
+    height: auto;
 }
 
 .footer-title {
@@ -56,12 +63,71 @@ footer {
     height: 13px;
 }
 
-.logofooter-txt, .logofooter-txt2 {
-    margin-left: 10px;
-}
+
 
 .rotate {
     display: flex;
     justify-content:flex-start;
     margin-left: 0;
+}
+
+//Media query Desktop//
+@media (min-width: 1024px) and (max-width: 2000px){
+
+
+
+.footer_restaurants  {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;   
+}
+
+footer {
+    height: auto;
+}
+
+.links {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    gap: 10px;
+    margin-left: 30px; 
+    
+}
+
+.logo_footer {
+  position: relative;
+  left:88%;
+  top: 25px;
+  height: 18px;
+  width: 8%;
+}
+
+.logo_footer2 {
+    position: relative;
+    left:88%;
+    bottom: 5px;
+    width: 8%;
+    height: 18px;
+    margin-left: 10px;
+}
+
+.fa-handshake-simple {
+    position: relative;
+    top: 5px;
+
+}
+.fa-utensils {
+    position: relative;
+    bottom: 1px;  
+}
+
+.logofooter-txt2 {
+    padding-right: 20px;
+}
+
 }

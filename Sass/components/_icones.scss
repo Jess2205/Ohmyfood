@@ -143,6 +143,8 @@ abbr {
     -moz-transform: rotate(-30deg);
     -ms-transform: rotate(-30deg);
     -o-transform: rotate(-30deg);
+    position: relative;
+    top: 5px;
   }
 
   @media (min-width: 1024px) and (max-width: 2000px) {
@@ -156,5 +158,8 @@ abbr {
       bottom: 60px;
     }
 
+    .gris {
+      left: 230px;
+    }
     
   }
