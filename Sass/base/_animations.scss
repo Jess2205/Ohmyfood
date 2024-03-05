@@ -21,7 +21,11 @@
         -ms-transform: translateX(0px);
         -o-transform: translateX(0px);
         animation-timing-function: linear 10s;
-      }
+        -webkit-transition: all;
+        -moz-transition: all;
+        -ms-transition: all;
+        -o-transition: all;
+}
     50% {
       transform: translateX(240px);
       -webkit-transform: translateX(240px);
@@ -31,27 +35,31 @@
       animation-timing-function: linear 10s;
       }
     100% {
-        transform: translateX(349px);
-        -webkit-transform: translateX(349px);
-        -moz-transform: translateX(349px);
-        -ms-transform: translateX(349px);
-        -o-transform: translateX(349px);
-        animation-timing-function: linear 10s;
-      }
+      transform: translateX(349px);
+      -webkit-transform: translateX(349px);
+      -moz-transform: translateX(349px);
+      -ms-transform: translateX(349px);
+      -o-transform: translateX(349px);
+      animation-timing-function: linear 10s;
+      -webkit-transition: all;
+      -moz-transition: all;
+      -ms-transition: all;
+      -o-transition: all;
+}
     }
 
 //Animation pour apparition des menus//
 
 @keyframes decalage {
   from {
-    transition:all 1s  ;
-    -webkit-transition:all 1s  ;
-    -moz-transition:all 1s  ;
-    -ms-transition:all 1s  ;
-    -o-transition:all 1s  ;
+    transition:all 1s;
+    -webkit-transition:all 1s;
+    -moz-transition:all 1s;
+    -ms-transition:all 1s;
+    -o-transition:all 1s;
     margin-top: 3rem;
     opacity: 0;
-}
+  }
 to {
   transition: all 1s;
   -webkit-transition: all 1s;
@@ -60,6 +68,7 @@ to {
   -o-transition: all 1s;
   margin-top: 0rem;
   opacity: 1;
+   
 }
 }
 

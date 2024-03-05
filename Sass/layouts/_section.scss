@@ -159,10 +159,32 @@ body {
     width: 100%;
   }
 
-.menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 {
+.menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10  {
+  width: 98%;
+  height: 72px;
+  margin: auto;
+  display:flex;
+  align-content:center;
+  align-items:center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content:center;
+  padding: 0.1rem;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition:all 0.5s;
+  -webkit-transition:all 0.5s;
+  -moz-transition:all 0.5s;
+  -ms-transition:all 0.5s;
+  -o-transition:all 0.5s;
+ }
+
+.menu  {
     width: 98%;
     height: 72px;
-    margin: auto;
+    margin: auto;    
     display:flex;
     align-content:center;
     align-items:center;
@@ -179,7 +201,8 @@ body {
     -moz-transition:all 0.5s;
     -ms-transition:all 0.5s;
     -o-transition:all 0.5s;
-} 
+   
+}
 
 .article {
     height: 72px;
@@ -198,6 +221,7 @@ body {
     -moz-transition:all 0.5s ;
     -ms-transition:all 0.5s ;
     -o-transition:all 0.5s ;
+   
   } 
    
 .plats {
@@ -217,6 +241,7 @@ body {
     width:80px;
     position: relative;
     align-items: flex-start;
+   
   }
 
 .menu-txt {
@@ -267,54 +292,21 @@ body {
     margin-left: 5px;
   }
 
-.menu1 {
-    animation: decalage 2s;
-    -webkit-animation: decalage 2s;
-  }
-.menu2 {
-     animation: decalage 2.5s;
-     -webkit-animation: decalage 2.5s;
-  }
+.entrees {
+  animation: decalage 2s ;
+  -webkit-animation: decalage 2s ;
+}
 
-.menu3{
-     animation: decalage 3s;
-     -webkit-animation: decalage 3s;
-  }
+.plates {
+  animation: decalage 2.5s;
+  -webkit-animation: decalage 2.5s;
+}
 
-.menu4 {
-    animation: decalage 3.5s;
-    -webkit-animation: decalage 3.5s;
-  }
+.desserts {
+  animation: decalage 3s;
+  -webkit-animation: decalage 3s;
+}
 
-.menu5 {
-     animation: decalage 4s;
-     -webkit-animation: decalage 4s;
-  }
-
-.menu6 {
-     animation: decalage 4.5s;
-     -webkit-animation: decalage 4.5s;
-  }
-
-.menu7 {
-    animation: decalage 5s;
-    -webkit-animation: decalage 5s;
-  }
-
-.menu8 {
-     animation: decalage 5.5s;
-     -webkit-animation: decalage 5.5s;
-  }
-
-.menu9 {
-     animation: decalage 6s;
-     -webkit-animation: decalage 6s;
-  } 
-
-.menu10 {
-  animation: decalage 6.5s;
-  -webkit-animation: decalage 6.5s;
-  } 
 
 .subtitle_lacarte {
     font-family: "Roboto";
@@ -421,11 +413,11 @@ body {
     margin: auto;    
   }
   
-  .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10  {
+  .menu {
     width: 60%;
     justify-content: center;
     align-items: center;
-    margin: auto;  
+    margin: auto;
   }
 
   .subtitle_lacarte {

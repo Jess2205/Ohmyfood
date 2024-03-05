@@ -43,6 +43,10 @@
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
     animation-timing-function: linear 10s;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
   }
   50% {
     transform: translateX(240px);
@@ -59,6 +63,10 @@
     -ms-transform: translateX(349px);
     -o-transform: translateX(349px);
     animation-timing-function: linear 10s;
+    -webkit-transition: all;
+    -moz-transition: all;
+    -ms-transition: all;
+    -o-transition: all;
   }
 }
 @keyframes decalage {
@@ -521,6 +529,28 @@ body {
   -o-transition: all 0.5s;
 }
 
+.menu {
+  width: 98%;
+  height: 72px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.1rem;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
 .article {
   height: 72px;
   display: flex;
@@ -606,54 +636,19 @@ body {
   margin-left: 5px;
 }
 
-.menu1 {
+.entrees {
   animation: decalage 2s;
   -webkit-animation: decalage 2s;
 }
 
-.menu2 {
+.plates {
   animation: decalage 2.5s;
   -webkit-animation: decalage 2.5s;
 }
 
-.menu3 {
+.desserts {
   animation: decalage 3s;
   -webkit-animation: decalage 3s;
-}
-
-.menu4 {
-  animation: decalage 3.5s;
-  -webkit-animation: decalage 3.5s;
-}
-
-.menu5 {
-  animation: decalage 4s;
-  -webkit-animation: decalage 4s;
-}
-
-.menu6 {
-  animation: decalage 4.5s;
-  -webkit-animation: decalage 4.5s;
-}
-
-.menu7 {
-  animation: decalage 5s;
-  -webkit-animation: decalage 5s;
-}
-
-.menu8 {
-  animation: decalage 5.5s;
-  -webkit-animation: decalage 5.5s;
-}
-
-.menu9 {
-  animation: decalage 6s;
-  -webkit-animation: decalage 6s;
-}
-
-.menu10 {
-  animation: decalage 6.5s;
-  -webkit-animation: decalage 6.5s;
 }
 
 .subtitle_lacarte {
@@ -748,7 +743,7 @@ body {
     align-items: center;
     margin: auto;
   }
-  .menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 {
+  .menu {
     width: 60%;
     justify-content: center;
     align-items: center;
@@ -839,10 +834,10 @@ body {
   display: flex;
   margin: 0;
   transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
   overflow: hidden;
   margin-left: 10px;
 }
@@ -850,7 +845,6 @@ body {
 .validation {
   width: 0px;
   display: flex;
-  position: relative;
   justify-content: space-around;
   align-items: flex-start;
   position: relative;
@@ -864,6 +858,7 @@ body {
 .validation:hover {
   transform: translateX(0);
   transition-duration: 5s;
+  transition-delay: 0s;
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   -ms-transform: translateX(0px);
@@ -1060,7 +1055,7 @@ html, body {
   border-left: 8px solid #FF79DA;
   border-bottom: 8px solid #9356DA;
   border-right: 8px solid #FF79DA;
-  background-image: url(/Assets/Images/logo/ohmyfood@2x.svg);
+  background-image: url(../Assets/Images/logo/ohmyfood@2x.svg);
   border-radius: 50%;
   width: 200px;
   height: 200px;
