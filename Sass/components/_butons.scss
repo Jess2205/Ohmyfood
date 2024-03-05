@@ -27,20 +27,27 @@
     line-height: 19px;
     letter-spacing: 0em;
     border: none;
-    transition: background-color 250ms;
-    -webkit-transition: background-color 250ms;
-    -moz-transition: background-color 250ms;
-    -ms-transition: background-color 250ms;
-    -o-transition: background-color 250ms;
-    margin: auto; 
-  }
+    transition: all 250ms;
+    transition: background-color;
+    -webkit-transition: background-color;
+    -moz-transition: background-color;
+    -ms-transition: background-color;
+    -o-transition: background-color;
+    margin: auto;
+}
 
 .searchbutton a:hover {
     border-image-outset: 0px 4px 10px 0px;
     opacity: 0.8;
     filter: brightness(2);
-    -webkit-filter:brightness(2);
-   
+    -webkit-filter: brightness(2);
+    transition: all 0.5s;
+    animation: opacity 0.5s;
+    -webkit-animation: opacity 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
 }
 
 .searchbutton a {

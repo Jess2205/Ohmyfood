@@ -1,8 +1,8 @@
 //Animation pour le loader//
 
 @keyframes spin {
-  0% { transform:rotate(0deg); }
-  100% { transform: rotate(360deg); }
+  0% {transform:rotate(0deg);}
+  100% {transform: rotate(360deg);}
 }
 
 @keyframes fadeOut {
@@ -20,11 +20,12 @@
         -moz-transform: translateX(0px);
         -ms-transform: translateX(0px);
         -o-transform: translateX(0px);
-        animation-timing-function: linear 10s;
-        -webkit-transition: all;
-        -moz-transition: all;
-        -ms-transition: all;
-        -o-transition: all;
+        transition: all 10s;
+        animation-timing-function: linear;
+        -webkit-transition: all 10s;
+        -moz-transition: all 10s;
+        -ms-transition: all 10s;
+        -o-transition: all 10s;
 }
     50% {
       transform: translateX(240px);
@@ -32,7 +33,12 @@
       -moz-transform: translateX(240px);
       -ms-transform: translateX(240px);
       -o-transform: translateX(240px);
-      animation-timing-function: linear 10s;
+      transition: all 10s;
+        animation-timing-function: linear;
+        -webkit-transition: all 10s;
+        -moz-transition: all 10s;
+        -ms-transition: all 10s;
+        -o-transition: all 10s;
       }
     100% {
       transform: translateX(349px);
@@ -40,13 +46,14 @@
       -moz-transform: translateX(349px);
       -ms-transform: translateX(349px);
       -o-transform: translateX(349px);
-      animation-timing-function: linear 10s;
-      -webkit-transition: all;
-      -moz-transition: all;
-      -ms-transition: all;
-      -o-transition: all;
-}
+      transition: all 10s;
+      animation-timing-function: linear;
+      -webkit-transition: all 10s;
+      -moz-transition: all 10s;
+      -ms-transition: all 10s;
+      -o-transition: all 10s;
     }
+  }
 
 //Animation pour apparition des menus//
 
@@ -68,44 +75,43 @@ to {
   -o-transition: all 1s;
   margin-top: 0rem;
   opacity: 1;
-   
-}
+  }
 }
 
 
 //Animation pour les boutons//
 
 @keyframes opacity {
-      0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
-      }
+0% {
+  opacity: 0;
+  }
+100% {
+  opacity: 1;
+  }
+}
         
 //Animation pour les menus//
 
 @keyframes retract {
-    0% {
-        transform: scaleX(0);
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-        -o-transform: scaleX(0);
-        right: 0%;
-        left: 0%;
-      }
-      100% {
-        transform:scaleX(1) ;
-        -webkit-transform:scaleX(1) ;
-        -moz-transform:scaleX(1) ;
-        -ms-transform:scaleX(1) ;
-        -o-transform:scaleX(1) ;
-        right: 100%;
-        left: 0%;
-      }
-    }
+0% {
+  transform: scaleX(0);
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  right: 0%;
+  left: 0%;
+  }
+100% {
+  transform:scaleX(1) ;
+  -webkit-transform:scaleX(1) ;
+  -moz-transform:scaleX(1) ;
+  -ms-transform:scaleX(1) ;
+  -o-transform:scaleX(1) ;
+  right: 100%;
+  left: 0%;
+  }
+}
 
 
 

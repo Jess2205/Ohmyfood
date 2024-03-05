@@ -42,11 +42,12 @@
     -moz-transform: translateX(0px);
     -ms-transform: translateX(0px);
     -o-transform: translateX(0px);
-    animation-timing-function: linear 10s;
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
+    transition: all 10s;
+    animation-timing-function: linear;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -ms-transition: all 10s;
+    -o-transition: all 10s;
   }
   50% {
     transform: translateX(240px);
@@ -54,7 +55,12 @@
     -moz-transform: translateX(240px);
     -ms-transform: translateX(240px);
     -o-transform: translateX(240px);
-    animation-timing-function: linear 10s;
+    transition: all 10s;
+    animation-timing-function: linear;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -ms-transition: all 10s;
+    -o-transition: all 10s;
   }
   100% {
     transform: translateX(349px);
@@ -62,11 +68,12 @@
     -moz-transform: translateX(349px);
     -ms-transform: translateX(349px);
     -o-transform: translateX(349px);
-    animation-timing-function: linear 10s;
-    -webkit-transition: all;
-    -moz-transition: all;
-    -ms-transition: all;
-    -o-transition: all;
+    transition: all 10s;
+    animation-timing-function: linear;
+    -webkit-transition: all 10s;
+    -moz-transition: all 10s;
+    -ms-transition: all 10s;
+    -o-transition: all 10s;
   }
 }
 @keyframes decalage {
@@ -794,11 +801,12 @@ body {
   line-height: 19px;
   letter-spacing: 0em;
   border: none;
-  transition: background-color 250ms;
-  -webkit-transition: background-color 250ms;
-  -moz-transition: background-color 250ms;
-  -ms-transition: background-color 250ms;
-  -o-transition: background-color 250ms;
+  transition: all 250ms;
+  transition: background-color;
+  -webkit-transition: background-color;
+  -moz-transition: background-color;
+  -ms-transition: background-color;
+  -o-transition: background-color;
   margin: auto;
 }
 
@@ -807,6 +815,13 @@ body {
   opacity: 0.8;
   filter: brightness(2);
   -webkit-filter: brightness(2);
+  transition: all 0.5s;
+  animation: opacity 0.5s;
+  -webkit-animation: opacity 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
 }
 
 .searchbutton a {
