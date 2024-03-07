@@ -6,7 +6,8 @@
   }
   
 .searchbutton {
-    display:flex;
+    display:block;
+    margin: auto;
     align-items: center;
     align-content: center;
     justify-content: center;
@@ -21,33 +22,22 @@
     -o-border-radius: 25px;
     box-shadow: 0px 4px 10px 0px #00000040;
     width: 60%;
-    height: 50px;
-    margin-left:40px;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0em;
     border: none;
-    transition: all 250ms;
-    transition: background-color;
-    -webkit-transition: background-color;
-    -moz-transition: background-color;
-    -ms-transition: background-color;
-    -o-transition: background-color;
-    margin: auto;
+    
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .searchbutton a:hover {
     border-image-outset: 0px 4px 10px 0px;
     opacity: 0.8;
-    filter: brightness(2);
-    -webkit-filter: brightness(2);
-    transition: all 0.5s;
-    animation: opacity 0.5s;
-    -webkit-animation: opacity 0.5s;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -ms-transition: all 0.5s;
-    -o-transition: all 0.5s;
+    filter: brightness(1.75);
+    -webkit-filter: brightness(1.75);
+    
 }
 
 .searchbutton a {
@@ -60,12 +50,35 @@
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
+    display: block;
   }
-  
-//Media query Desktop//
-@media (min-width: 1024px) and (max-width: 2000px){
+
+   //Media query > Tablette//
+@media (min-width: 768px) and (max-width: 1024px){
+  .searchbutton {
+    width: 25%;
+    justify-content: center;
+    margin: auto;
+  }
+} 
+
+ //Media query Desktop 1024px//
+ @media (min-width: 1023.98px) and (max-width: 1440px) {
+
   .searchbutton {
     width: 20%;
+    justify-content: center;
+    margin: auto;
+  }
+
+ }
+
+//Media query Desktop > 1024px//
+@media (min-width: 1440px) and (max-width: 2000px){
+  .searchbutton {
+    width: 15%;
+    justify-content: center;
+    margin: auto;
   }
 }
 

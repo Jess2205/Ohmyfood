@@ -200,14 +200,13 @@ b {
   font-style: italic;
   font-weight: 400;
   line-height: 26px;
-  letter-spacing: 0em;
+  letter-spacing: 0.2em;
   text-align: left;
   padding-left: 20px;
   margin-top: 0;
   width: 119px;
-  -webkit-filter: invert(200%);
+  -webkit-filter: invert(100%);
   width: 30%;
-  height: 18px;
 }
 
 footer {
@@ -235,7 +234,6 @@ footer {
   font-size: 18px;
   position: relative;
   width: 100%;
-  height: 42%;
   top: -70px;
   height: auto;
 }
@@ -247,7 +245,6 @@ footer {
 
 .fa-utensils, .fa-handshake-simple, .logofooter-txt {
   color: #FFFFFF;
-  height: 13px;
   margin-right: 5px;
 }
 
@@ -261,7 +258,15 @@ footer {
   margin-left: 0;
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
+  .logo_footer {
+    width: 15%;
+  }
+  .logo_footer2 {
+    width: 12%;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
   .footer_restaurants {
     display: flex;
     justify-content: center;
@@ -284,8 +289,52 @@ footer {
   .logo_footer {
     position: relative;
     left: 88%;
-    top: 25px;
-    height: 18px;
+    top: 23px;
+    width: 10%;
+  }
+  .logo_footer2 {
+    position: relative;
+    left: 87%;
+    bottom: 5px;
+    width: 10%;
+    margin-left: 10px;
+  }
+  .fa-handshake-simple {
+    position: relative;
+    top: 3px;
+  }
+  .fa-utensils {
+    position: relative;
+    bottom: 1px;
+  }
+  .logofooter-txt2 {
+    padding-right: 20px;
+  }
+}
+@media (min-width: 1439.98px) and (max-width: 2000px) {
+  .footer_restaurants {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: auto;
+  }
+  footer {
+    height: auto;
+  }
+  .links {
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-left: 30px;
+  }
+  .logo_footer {
+    position: relative;
+    left: 90%;
+    top: 23px;
     width: 8%;
   }
   .logo_footer2 {
@@ -293,12 +342,11 @@ footer {
     left: 88%;
     bottom: 5px;
     width: 8%;
-    height: 18px;
     margin-left: 10px;
   }
   .fa-handshake-simple {
     position: relative;
-    top: 5px;
+    top: 3px;
   }
   .fa-utensils {
     position: relative;
@@ -338,12 +386,35 @@ footer {
   margin: auto;
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
+  #logo {
+    width: 28%;
+  }
+  .sub-title {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+  #logo {
+    width: 25%;
+  }
+  .sub-title {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .section-title {
+    font-size: 1.9em;
+  }
+}
+@media (min-width: 1439.98px) and (max-width: 2000px) {
   #logo {
     width: 20%;
   }
   .sub-title {
-    width: 42%;
+    width: 50%;
     font-size: 14px;
     font-weight: 300;
   }
@@ -372,7 +443,7 @@ body {
 
 .main-container {
   width: 100%;
-  max-width: 767.99px;
+  max-width: 2000px;
   box-sizing: border-box;
   height: 100%;
 }
@@ -501,7 +572,7 @@ body {
 
 .titre_lacarte_coeur {
   position: relative;
-  width: 95%;
+  width: 70%;
   padding-left: 15px;
 }
 
@@ -517,28 +588,6 @@ body {
   position: relative;
   padding-right: 0;
   width: 100%;
-}
-
-.menu1, .menu2, .menu3, .menu4, .menu5, .menu6, .menu7, .menu8, .menu9, .menu10 {
-  width: 98%;
-  height: 72px;
-  margin: auto;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.1rem;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
 }
 
 .menu {
@@ -587,11 +636,12 @@ body {
   height: 69px;
   background: rgb(255, 255, 255);
   border-radius: 15.04px;
-  box-shadow: 0px 4.0114941597px 15.0431032181px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4.0114941597px 8.0431032181px 0px rgba(0, 0, 0, 0.1);
   display: flex;
   justify-content: flex-end;
   align-items: end;
   overflow: hidden;
+  margin-bottom: 10px;
 }
 
 .menu:hover .plats .validation {
@@ -603,9 +653,10 @@ body {
 .menu-txt {
   height: 75px;
   width: 100%;
-  margin-left: 10px;
+  padding-left: 10px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  margin: auto;
   flex-direction: column;
   overflow: hidden;
   white-space: nowrap;
@@ -630,6 +681,7 @@ body {
   white-space: nowrap;
   text-overflow: ellipsis;
   padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .titre_menus {
@@ -674,6 +726,7 @@ body {
   width: 10%;
   height: 23px;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .commander {
@@ -695,9 +748,84 @@ body {
   -webkit-filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
   .main-container {
-    min-width: 1024px;
+    min-width: 767.98px;
+    width: 100%;
+  }
+  .section-title3 {
+    padding-left: 10px;
+  }
+  .fonctionnement {
+    width: 100%;
+    font-size: 14px;
+  }
+  .cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+  .carte, .enchantee, .lapalette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 350px;
+  }
+  .img-enchantee-accueil, .img-lapalette-accueil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200%;
+    position: absolute;
+    top: 0px;
+  }
+  .carte-txt2 {
+    top: 41%;
+  }
+  .lacarte {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+  .menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .subtitle_lacarte {
+    width: 5%;
+    margin-left: 285px;
+  }
+  .etape {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    padding-right: 20px;
+  }
+  .titre_lacarte_coeur {
+    position: relative;
+    width: 70%;
+    padding-left: 200px;
+  }
+  .subtitle_lacarte {
+    margin-left: 20%;
+    width: 5%;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .main-container {
+    max-width: 1439.98px;
     width: 100%;
   }
   .fonctionnement {
@@ -719,11 +847,11 @@ body {
   .cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     align-content: center;
     flex-direction: row;
-    width: 90%;
+    width: 100%;
     margin: auto;
   }
   .carte, .enchantee, .lapalette {
@@ -732,7 +860,7 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    width: 400px;
+    width: 360px;
   }
   .img-enchantee-accueil, .img-lapalette-accueil {
     display: flex;
@@ -751,19 +879,96 @@ body {
     margin: auto;
   }
   .titre_lacarte_coeur {
-    width: 30%;
-    align-items: center;
-    margin: auto;
+    position: relative;
+    width: 70%;
+    padding-left: 290px;
+  }
+  .titre_lacarte {
+    font-size: 25px;
   }
   .menu {
-    width: 60%;
+    width: 50%;
     justify-content: center;
     align-items: center;
     margin: auto;
   }
   .subtitle_lacarte {
-    width: 5%;
-    margin-left: 165px;
+    width: 4%;
+    margin-left: 205px;
+  }
+}
+@media (min-width: 1439.98px) and (max-width: 2000px) {
+  .main-container {
+    max-width: 2000px;
+    width: 100%;
+  }
+  .fonctionnement {
+    width: 90%;
+    margin: auto;
+  }
+  .etape {
+    display: inline-block;
+    justify-content: center;
+    flex-direction: row;
+    width: 30%;
+    margin: auto;
+    padding: 0;
+    padding-right: 20px;
+  }
+  .section-title3 {
+    padding-left: 70px;
+  }
+  .cartes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    flex-direction: row;
+    width: 100%;
+    margin: auto;
+  }
+  .carte, .enchantee, .lapalette {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 500px;
+  }
+  .img-enchantee-accueil, .img-lapalette-accueil {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 200%;
+    position: absolute;
+    top: 0px;
+  }
+  .carte-txt2 {
+    top: 41%;
+  }
+  .lacarte {
+    width: 80%;
+    align-items: center;
+    margin: auto;
+  }
+  .titre_lacarte_coeur {
+    position: relative;
+    width: 70%;
+    padding-left: 450px;
+  }
+  .titre_lacarte {
+    font-size: 25px;
+  }
+  .menu {
+    width: 45%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+  .subtitle_lacarte {
+    width: 3%;
+    margin-left: 320px;
   }
 }
 ::-moz-placeholder {
@@ -780,7 +985,8 @@ body {
 }
 
 .searchbutton {
-  display: flex;
+  display: block;
+  margin: auto;
   align-items: center;
   align-content: center;
   justify-content: center;
@@ -795,33 +1001,20 @@ body {
   -o-border-radius: 25px;
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.2509803922);
   width: 60%;
-  height: 50px;
-  margin-left: 40px;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0em;
   border: none;
-  transition: all 250ms;
-  transition: background-color;
-  -webkit-transition: background-color;
-  -moz-transition: background-color;
-  -ms-transition: background-color;
-  -o-transition: background-color;
-  margin: auto;
+  padding: 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .searchbutton a:hover {
   border-image-outset: 0px 4px 10px 0px;
   opacity: 0.8;
-  filter: brightness(2);
-  -webkit-filter: brightness(2);
-  transition: all 0.5s;
-  animation: opacity 0.5s;
-  -webkit-animation: opacity 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
+  filter: brightness(1.75);
+  -webkit-filter: brightness(1.75);
 }
 
 .searchbutton a {
@@ -834,11 +1027,28 @@ body {
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
+  display: block;
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 768px) and (max-width: 1024px) {
+  .searchbutton {
+    width: 25%;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1440px) {
   .searchbutton {
     width: 20%;
+    justify-content: center;
+    margin: auto;
+  }
+}
+@media (min-width: 1440px) and (max-width: 2000px) {
+  .searchbutton {
+    width: 15%;
+    justify-content: center;
+    margin: auto;
   }
 }
 .check {
@@ -973,7 +1183,7 @@ abbr {
   position: absolute;
 }
 
-.gris {
+.gris, .gris2, .gris3 {
   background-color: rgb(246, 246, 246);
   padding-top: 10px;
   left: 260px;
@@ -1033,17 +1243,49 @@ abbr {
   top: 5px;
 }
 
-@media (min-width: 1024px) and (max-width: 2000px) {
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
   .fa-mobile-screen-button, .fa-list, .fa-store {
     width: 90%;
   }
   .fa-heart {
     position: relative;
-    left: 350px;
+    left: 300px;
+    bottom: 60px;
+  }
+  .gris, .gris3 {
+    left: 230px;
+  }
+  .gris2 {
+    left: 180px;
+  }
+  .icone-txt {
+    padding-left: 10px;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .fa-heart {
+    position: relative;
+    left: 300px;
     bottom: 60px;
   }
   .gris {
-    left: 230px;
+    left: 260px;
+  }
+  .gris2 {
+    left: 220px;
+  }
+  .gris3 {
+    left: 240px;
+  }
+}
+@media (min-width: 1439.98px) and (max-width: 2000px) {
+  .fa-heart {
+    position: relative;
+    left: 450px;
+    bottom: 60px;
+  }
+  .gris {
+    left: 210px;
   }
 }
 html, body {

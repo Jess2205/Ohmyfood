@@ -88,7 +88,7 @@ abbr {
     position: absolute;  
   }
 
-.gris {
+.gris, .gris2, .gris3 {
     background-color:rgba(246, 246, 246, 1);
     padding-top: 10px;
     left:260px;
@@ -110,6 +110,7 @@ abbr {
     background-image: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%); 
     -webkit-text-stroke-color: transparent;
     -webkit-text-stroke-width: 0px;
+    
   }
   
 .fa-left-long {
@@ -146,21 +147,65 @@ abbr {
     position: relative;
     top: 5px;
   }
+   //Media query Tablette//
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
 
-  @media (min-width: 1024px) and (max-width: 2000px) {
-    
-    .fa-mobile-screen-button, .fa-list, .fa-store {
-      width: 90%; 
-    }
+  .fa-mobile-screen-button, .fa-list, .fa-store {
+    width: 90%; 
+  }
+
+  .fa-heart {
+    position: relative;
+    left: 300px;
+    bottom: 60px;
+  }
+
+  .gris, .gris3 {
+    left: 230px;
+  }
+
+  .gris2 {
+    left: 180px;
+  }
+
+  .icone-txt {
+    padding-left: 10px;
+  }   
+}
+
+  //Media query Desktop 1024px//
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
 
     .fa-heart {
       position: relative;
-      left: 350px;
+      left: 300px;
       bottom: 60px;
     }
 
     .gris {
-      left: 230px;
+      left: 260px;
+    }
+
+    .gris2 {
+      left: 220px;
+    }
+
+    .gris3 {
+      left: 240px;
+    }
+    
+  }
+    //Media query Desktop > 1024px//
+  @media (min-width: 1439.98px) and (max-width: 2000px) {
+    
+    .fa-heart {
+      position: relative;
+      left: 450px;
+      bottom: 60px;
+    }
+
+    .gris {
+      left: 210px;
     }
     
   }

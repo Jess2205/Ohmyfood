@@ -11,14 +11,13 @@
     font-style: italic;
     font-weight: 400;
     line-height: 26px;
-    letter-spacing: 0em;
+    letter-spacing: 0.2em;
     text-align: left;
     padding-left: 20px;
     margin-top: 0;
     width: 119px;
-    -webkit-filter:invert(200%);
-    width: 30%;
-    height: 18px;
+    -webkit-filter:invert(100%);
+    width: 30%;      
 }
 
 
@@ -46,8 +45,7 @@ footer {
     padding-bottom: 10px;
     font-size: 18px; 
     position: relative;
-    width: 100%;
-    height: 42%;
+    width: 100%;    
     top:-70px;
     height: auto;
 }
@@ -58,8 +56,7 @@ footer {
 }
   
 .fa-utensils, .fa-handshake-simple, .logofooter-txt {
-    color:#FFFFFF; 
-    height: 13px;
+    color:#FFFFFF;    
     margin-right:5px;
 }
 
@@ -73,8 +70,76 @@ footer {
     margin-left: 0;
 }
 
-//Media query Desktop//
-@media (min-width: 1024px) and (max-width: 2000px) {
+//Media query Tablette//
+@media (min-width: 767.98px) and (max-width: 1023.98px){
+    
+    .logo_footer {
+        width: 15%;
+    }
+
+    .logo_footer2 {
+        width: 12%;
+    }
+  } 
+
+   //Media query Desktop 1024px//
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+
+    .footer_restaurants  {
+        display:flex;
+        justify-content:center;
+        align-items: center;
+        flex-direction: row;
+        height: auto;   
+    }
+    
+    footer {
+        height: auto;
+    }
+    
+    .links {
+        text-align: center;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        gap: 10px;
+        margin-left: 30px;    
+    }
+    
+    .logo_footer {
+      position: relative;
+      left:88%;
+      top: 23px;  
+      width: 10%;
+    }
+    
+    .logo_footer2 {
+        position: relative;
+        left:87%;
+        bottom: 5px;
+        width: 10%;    
+        margin-left: 10px;
+    }
+    
+    .fa-handshake-simple {
+        position: relative;
+        top: 3px;
+    }
+    
+    .fa-utensils {
+        position: relative;
+        bottom: 1px;  
+    }
+    
+    .logofooter-txt2 {
+        padding-right: 20px;
+    }
+    
+}
+
+//Media query Desktop > 1024px//
+@media (min-width: 1439.98px) and (max-width: 2000px) {
 
 .footer_restaurants  {
     display:flex;
@@ -100,9 +165,8 @@ footer {
 
 .logo_footer {
   position: relative;
-  left:88%;
-  top: 25px;
-  height: 18px;
+  left:90%;
+  top: 23px;  
   width: 8%;
 }
 
@@ -110,14 +174,13 @@ footer {
     position: relative;
     left:88%;
     bottom: 5px;
-    width: 8%;
-    height: 18px;
+    width: 8%;    
     margin-left: 10px;
 }
 
 .fa-handshake-simple {
     position: relative;
-    top: 5px;
+    top: 3px;
 }
 
 .fa-utensils {

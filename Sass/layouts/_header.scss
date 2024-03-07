@@ -21,15 +21,48 @@
     margin: auto;
   }
 
-  //Media query Desktop//
-@media (min-width: 1024px) and (max-width: 2000px) {
+
+   //Media query Tablette//
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
+
+  #logo {
+    width: 28%;
+  }
+
+  .sub-title {
+    width: 60%;
+    font-size: 14px;
+    font-weight: 300;
+  } 
+}
+
+//Media query Desktop 1024//
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+  
+  #logo {
+    width: 25%;
+  }
+
+  .sub-title {
+    width: 50%;
+    font-size: 14px;
+    font-weight: 300;
+  }
+
+  .section-title {
+    font-size: 1.9em;
+  }
+}
+
+  //Media query Desktop > 1024//
+@media (min-width: 1439.98px) and (max-width: 2000px) {
   
   #logo {
     width: 20%;
   }
 
   .sub-title {
-    width: 42%;
+    width: 50%;
     font-size: 14px;
     font-weight: 300;
   }
