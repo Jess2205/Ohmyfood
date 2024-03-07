@@ -335,13 +335,13 @@ footer {
     position: relative;
     left: 90%;
     top: 23px;
-    width: 8%;
+    width: 7%;
   }
   .logo_footer2 {
     position: relative;
     left: 88%;
     bottom: 5px;
-    width: 8%;
+    width: 7%;
     margin-left: 10px;
   }
   .fa-handshake-simple {
@@ -830,7 +830,7 @@ body {
   }
   .fonctionnement {
     width: 90%;
-    margin: auto;
+    padding-left: 80px;
   }
   .etape {
     display: inline-block;
@@ -842,7 +842,7 @@ body {
     padding-right: 20px;
   }
   .section-title3 {
-    padding-left: 70px;
+    padding-left: 85px;
   }
   .cartes {
     display: flex;
@@ -887,10 +887,9 @@ body {
     font-size: 25px;
   }
   .menu {
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-items: center;
-    margin: auto;
   }
   .subtitle_lacarte {
     width: 4%;
@@ -904,7 +903,7 @@ body {
   }
   .fonctionnement {
     width: 90%;
-    margin: auto;
+    padding-left: 120px;
   }
   .etape {
     display: inline-block;
@@ -916,7 +915,7 @@ body {
     padding-right: 20px;
   }
   .section-title3 {
-    padding-left: 70px;
+    padding-left: 130px;
   }
   .cartes {
     display: flex;

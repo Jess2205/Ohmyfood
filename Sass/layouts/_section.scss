@@ -31,6 +31,8 @@ body {
     padding-bottom: 50px;
   }
 
+
+
 //Section menu sous forme de cartes//
 
 .menus {
@@ -430,7 +432,7 @@ body {
 
   .fonctionnement {
     width: 90%;
-    margin: auto;
+    padding-left: 80px;
   }
 
   .etape {
@@ -444,7 +446,7 @@ body {
   }
 
   .section-title3 {
-    padding-left: 70px;
+    padding-left: 85px;
   }
 
   .cartes {
@@ -500,10 +502,10 @@ body {
   }
 
   .menu {
-    width: 50%;
-    justify-content: center;
+    width: 60%;
+    justify-content:center;
     align-items: center;
-    margin: auto;
+   
   }
 
   .subtitle_lacarte {
@@ -522,8 +524,9 @@ body {
 
   .fonctionnement {
     width: 90%;
-    margin: auto;
+    padding-left: 120px;
   }
+
 
   .etape {
     display:inline-block;
@@ -536,7 +539,7 @@ body {
   }
 
   .section-title3 {
-    padding-left: 70px;
+    padding-left: 130px;
   }
 
   .cartes {
