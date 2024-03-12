@@ -96,13 +96,13 @@ abbr {
 
 .fa-heart::before {
     font-weight: bold;
-    transition: opacity 1.5s ease;
-    -webkit-transition: opacity 1.5s ease;
-    -moz-transition: opacity 1.5s ease;
-    -ms-transition: opacity 1.5s ease;
-    -o-transition: opacity 1.5s ease;
-    vertical-align: baseline; 
-  }
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    vertical-align: baseline;
+}
 
 .fa-heart:hover::before{
     background-clip: text;
