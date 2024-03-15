@@ -5,7 +5,8 @@ body {
     width: 100%;
     position: relative;
     margin-left: 0;
-    margin-right: 0;  
+    margin-right: 0; 
+    
   }
 
 .main-container {
@@ -25,11 +26,13 @@ body {
 
 .etape {
     padding-left : 15px;
+    padding-bottom: 10px;
   }
 
 .fonctionnement {
     padding-top: 30px;
     padding-bottom: 50px;
+   
   }
 
 
@@ -252,7 +255,7 @@ body {
     position:relative;
     bottom:15px;
     font-weight: 500;
-    font-size: 0.850rem;
+    font-size: 0.750rem;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -448,11 +451,12 @@ body {
 
   .section-title3 {
     padding-left: 85px;
+   
   }
 
   .cartes {
     display:flex;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
     justify-content:space-evenly;
     align-items: center;
     align-content: center;
@@ -486,9 +490,8 @@ body {
   }
 
   .lacarte {
-    width: 80%;
+    width: 100%;
     align-items:center;
-    margin: auto;
    
   }
 

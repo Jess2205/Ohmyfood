@@ -16,7 +16,8 @@ html, body {
     align-items: center;
     opacity: 1;
     overflow: hidden;
-    transition: opacity 3s ease;  
+    transition: opacity 3s ease; 
+     
 }
 
 .loader {
@@ -39,7 +40,8 @@ html, body {
 
 .loader-container.loaded {
     opacity: 0; 
-    pointer-events: none; 
+    pointer-events: none;
+
 }
 
 .content {
@@ -56,12 +58,21 @@ html, body {
 
 #loader.loaded + #content {
     display: block;
+   
 }
 
 .loader-container {
-    animation: fadeOut 3s forwards;
-    -webkit-animation: fadeOut 3s forwards;
+    animation: fadeOut  3s forwards;
+    -webkit-animation: fadeOut  3s forwards;
 }
+
+.loader-container {
+    animation: rideau  3s forwards;
+    -webkit-animation: rideau  3s forwards;
+}
+
+
+
 
 
 
