@@ -1340,10 +1340,12 @@ abbr {
     bottom: 40px;
   }
   .gris2 {
-    left: 220px;
+    left: 60%;
+    bottom: 40px;
   }
   .gris3 {
-    left: 240px;
+    left: 62%;
+    bottom: 40px;
   }
 }
 html, body {
