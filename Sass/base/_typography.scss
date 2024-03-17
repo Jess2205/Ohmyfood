@@ -39,6 +39,14 @@ a {
     text-decoration: none;
   }
  
+.wrap {
+  display:flex;
+  flex-basis: 49%;
+  justify-content:center;
+  color: black;
+  text-decoration: none;
+  }
+
 ul {
     text-decoration: none;
     padding: 0;

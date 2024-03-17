@@ -184,6 +184,14 @@ a {
   text-decoration: none;
 }
 
+.wrap {
+  display: flex;
+  flex-basis: 49%;
+  justify-content: center;
+  color: black;
+  text-decoration: none;
+}
+
 ul {
   text-decoration: none;
   padding: 0;
@@ -216,7 +224,7 @@ b {
 
 .logo_footer, .logo_footer2 {
   font-family: "Shrikhand";
-  font-size: 18px;
+  font-size: 25px;
   font-style: italic;
   font-weight: 400;
   line-height: 26px;
@@ -224,9 +232,8 @@ b {
   text-align: left;
   padding-left: 20px;
   margin-top: 0;
-  width: 119px;
+  width: 100px;
   -webkit-filter: invert(100%);
-  width: 30%;
 }
 
 footer {
@@ -278,14 +285,6 @@ footer {
   margin-left: 0;
 }
 
-@media (min-width: 767.98px) and (max-width: 1023.98px) {
-  .logo_footer {
-    width: 15%;
-  }
-  .logo_footer2 {
-    width: 12%;
-  }
-}
 @media (min-width: 1023.98px) and (max-width: 1439.98px) {
   .footer_restaurants {
     display: flex;
@@ -310,13 +309,11 @@ footer {
     position: relative;
     left: 88%;
     top: 23px;
-    width: 8%;
   }
   .logo_footer2 {
     position: relative;
     left: 87%;
     bottom: 5px;
-    width: 8%;
     margin-left: 10px;
   }
   .fa-handshake-simple {
@@ -495,6 +492,7 @@ body {
 
 .section-title3 {
   padding-left: 5px;
+  flex-grow: 2;
 }
 
 .carte img {
@@ -587,14 +585,15 @@ body {
   bottom: 30px;
   z-index: 1;
   padding-bottom: 30px;
-  margin: 0;
+  margin: auto;
   top: -70px;
 }
 
 .titre_lacarte_coeur {
   position: relative;
   width: 70%;
-  padding-left: 15px;
+  align-items: start;
+  padding-left: 10px;
 }
 
 .titre_lacarte {
@@ -609,6 +608,9 @@ body {
   position: relative;
   padding-right: 0;
   width: 100%;
+  text-align: start;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .menu {
@@ -784,12 +786,13 @@ body {
   .cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     flex-direction: row;
     width: 100%;
     margin: auto;
+    gap: 10px;
   }
   .carte, .enchantee, .lapalette {
     display: flex;
@@ -797,7 +800,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    width: 350px;
+    width: 90%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
   .img-enchantee-accueil, .img-lapalette-accueil {
     display: flex;
@@ -836,8 +841,13 @@ body {
   }
   .titre_lacarte_coeur {
     position: relative;
-    width: 70%;
-    padding-left: 200px;
+    width: 100%;
+    padding: 0;
+  }
+  .titre_lacarte {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .subtitle_lacarte {
     margin-left: 20%;
@@ -846,7 +856,6 @@ body {
 }
 @media (min-width: 1023.98px) and (max-width: 1439.98px) {
   .main-container {
-    max-width: 1439.98px;
     width: 100%;
   }
   .fonctionnement {
@@ -868,12 +877,13 @@ body {
   .cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     flex-direction: row;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    gap: 10px;
+    margin-left: 80px;
   }
   .carte, .enchantee, .lapalette {
     display: flex;
@@ -881,7 +891,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    width: 360px;
+    width: 100%;
+    margin-right: 15%;
+    margin-bottom: 10%;
   }
   .img-enchantee-accueil, .img-lapalette-accueil {
     display: flex;
@@ -895,26 +907,31 @@ body {
     top: 41%;
   }
   .lacarte {
-    width: 100%;
+    width: 80%;
     align-items: center;
+    margin: auto;
   }
   .titre_lacarte_coeur {
     position: relative;
-    width: 70%;
-    padding-left: 290px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
   }
   .titre_lacarte {
     font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   .menu {
-    width: 50%;
+    width: 60%;
     justify-content: center;
     align-items: center;
     margin: auto;
   }
   .subtitle_lacarte {
     width: 4%;
-    margin-left: 205px;
+    margin-left: 20%;
   }
 }
 @media (min-width: 1439.98px) and (max-width: 2000px) {
@@ -941,12 +958,13 @@ body {
   .cartes {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     align-content: center;
     flex-direction: row;
-    width: 100%;
-    margin: auto;
+    width: 90%;
+    gap: 10px;
+    margin-left: 7%;
   }
   .carte, .enchantee, .lapalette {
     display: flex;
@@ -954,7 +972,9 @@ body {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
-    width: 500px;
+    width: 85%;
+    margin-right: 5%;
+    margin-bottom: 5%;
   }
   .img-enchantee-accueil, .img-lapalette-accueil {
     display: flex;
@@ -974,21 +994,26 @@ body {
   }
   .titre_lacarte_coeur {
     position: relative;
-    width: 70%;
-    padding-left: 450px;
+    width: 100%;
+    margin: auto;
+    padding: 0;
   }
   .titre_lacarte {
     font-size: 25px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
   }
   .menu {
-    width: 45%;
+    width: 60%;
     justify-content: center;
     align-items: center;
     margin: auto;
   }
   .subtitle_lacarte {
     width: 3%;
-    margin-left: 320px;
+    margin-left: 20%;
   }
 }
 ::-moz-placeholder {
@@ -1208,7 +1233,7 @@ abbr {
 .gris, .gris2, .gris3 {
   background-color: rgb(246, 246, 246);
   padding-top: 10px;
-  left: 260px;
+  left: 250px;
 }
 
 .fa-heart::before {
@@ -1272,14 +1297,17 @@ abbr {
   }
   .fa-heart {
     position: relative;
-    left: 300px;
+    left: 250px;
     bottom: 60px;
   }
-  .gris, .gris3 {
-    left: 230px;
+  .gris {
+    left: 70%;
+  }
+  .gris3 {
+    left: 68%;
   }
   .gris2 {
-    left: 180px;
+    left: 65%;
   }
   .icone-txt {
     padding-left: 10px;
@@ -1288,17 +1316,17 @@ abbr {
 @media (min-width: 1023.98px) and (max-width: 1439.98px) {
   .fa-heart {
     position: relative;
-    left: 300px;
+    left: 320px;
     bottom: 60px;
   }
   .gris {
-    left: 260px;
+    left: 63%;
   }
   .gris2 {
-    left: 220px;
+    left: 60%;
   }
   .gris3 {
-    left: 240px;
+    left: 62%;
   }
 }
 @media (min-width: 1439.98px) and (max-width: 2000px) {
@@ -1308,7 +1336,8 @@ abbr {
     bottom: 60px;
   }
   .gris {
-    left: 260px;
+    left: 62%;
+    bottom: 40px;
   }
   .gris2 {
     left: 220px;

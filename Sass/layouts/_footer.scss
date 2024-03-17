@@ -7,7 +7,7 @@
 
 .logo_footer, .logo_footer2 {
     font-family: "Shrikhand";
-    font-size: 18px;
+    font-size: 25px;
     font-style: italic;
     font-weight: 400;
     line-height: 26px;
@@ -15,9 +15,9 @@
     text-align: left;
     padding-left: 20px;
     margin-top: 0;
-    width: 119px;
+    width:100px;
     -webkit-filter:invert(100%);
-    width: 30%;      
+          
 }
 
 
@@ -70,17 +70,8 @@ footer {
     margin-left: 0;
 }
 
-//Media query Tablette//
-@media (min-width: 767.98px) and (max-width: 1023.98px){
-    
-    .logo_footer {
-        width: 15%;
-    }
 
-    .logo_footer2 {
-        width: 12%;
-    }
-  } 
+
 
    //Media query Desktop 1024px//
 @media (min-width: 1023.98px) and (max-width: 1439.98px) {
@@ -111,14 +102,14 @@ footer {
       position: relative;
       left:88%;
       top: 23px;  
-      width: 8%;
+      
     }
     
     .logo_footer2 {
         position: relative;
         left:87%;
         bottom: 5px;
-        width: 8%;    
+            
         margin-left: 10px;
     }
     
