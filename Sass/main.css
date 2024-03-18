@@ -55,6 +55,14 @@
     -o-transform: translateY(-100vh);
   }
 }
+@keyframes remplissage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 @keyframes transleteX {
   0% {
     transform: translateX(0px);
@@ -1226,8 +1234,6 @@ abbr {
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  animation-name: direction;
-  position: absolute;
 }
 
 .gris, .gris2, .gris3 {
@@ -1244,6 +1250,8 @@ abbr {
   -ms-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   vertical-align: baseline;
+  animation: remplissage 2s ease-in-out;
+  -webkit-animation: remplissage 2s ease-in-out;
 }
 
 .fa-heart:hover::before {

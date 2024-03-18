@@ -32,6 +32,17 @@
 }
 }
 
+//Animation pour le coeur//
+
+@keyframes remplissage {
+  bottom {
+    opacity: 0;
+  }
+  top {
+    opacity: 1;
+  }
+}
+
 //Animation pour le check//
 
 @keyframes transleteX {

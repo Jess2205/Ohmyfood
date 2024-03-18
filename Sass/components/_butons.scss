@@ -22,15 +22,13 @@
     -o-border-radius: 25px;
     box-shadow: 0px 4px 10px 0px #00000040;
     width: 60%;
-    font-size: 16px;
+    font-size: 1em;
     line-height: 19px;
     letter-spacing: 0em;
     border: none;
     padding: 10px;
     padding-top: 15px;
     padding-bottom: 15px;
-   
-
 }
 
 .searchbutton:hover {
@@ -38,9 +36,8 @@
     opacity: 0.8;
     background-color: lighten(#9356dc, 5%);
     background-blend-mode: lighten;
-    box-shadow: 0px 4px 10px 0px #00000050;
-    z-index: 2;
-    
+    box-shadow: 0px 4px 10px 0px #00000040;
+    z-index: 2;   
 }
 
 
