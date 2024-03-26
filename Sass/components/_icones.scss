@@ -84,8 +84,8 @@ abbr {
      -moz-border-radius: 50%;
      -ms-border-radius: 50%;
      -o-border-radius: 50%;
-     animation: opacity 5s ease-in-out;
-     -webkit-animation: opacity 5s ease-in-out;
+     animation: opacity 0.5s ease-in-out;
+     -webkit-animation: opacity 0.5s ease-in-out;
 }
 
 .gris, .gris2, .gris3 {
@@ -96,14 +96,14 @@ abbr {
 
 .fa-heart::before {
     font-weight: bold;
-    transition: all 5s ease-in-out;
-    -webkit-transition: all 5s ease-in-out;
-    -moz-transition: all 5s ease-in-out;
-    -ms-transition: all 5s ease-in-out;
-    -o-transition: all 5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
     vertical-align: baseline;
-    animation: opacity 5s ease-in-out;
-    -webkit-animation: opacity 5s ease-in-out;
+    animation: opacity 0.5s ease-in-out;
+    -webkit-animation: opacity 0.5s ease-in-out;
 }
 
 .fa-heart:hover::before{

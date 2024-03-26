@@ -32,8 +32,6 @@
 }
 }
 
-
-
 //Animation pour le check//
 
 @keyframes transleteX {
@@ -89,7 +87,7 @@
     -o-transition:all 1s;
     margin-top: 3rem;
     opacity: 0;
-  }
+}
 to {
   transition: all 1s;
   -webkit-transition: all 1s;
