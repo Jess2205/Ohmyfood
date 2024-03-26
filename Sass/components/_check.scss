@@ -1,9 +1,9 @@
 .check {
-    width: 50px;
+    width: 40%;
     background-color:rgba(153, 226, 208, 1);
     position: relative;
     height:40px;
-    padding: 12px 12px;
+    padding: 12px 20px;
     justify-content:center;
     align-items: center;
     display: flex;
@@ -14,7 +14,7 @@
     -ms-transition:all 5s;
     -o-transition:all 5s;
     overflow: hidden;
-    margin-left: 10px;
+   
 }
   
 .validation {

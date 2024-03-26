@@ -589,13 +589,6 @@ body {
   top: -70px;
 }
 
-.titre_lacarte_coeur {
-  position: relative;
-  width: 70%;
-  align-items: start;
-  padding-left: 10px;
-}
-
 .titre_lacarte {
   font-family: "Shrikhand";
   font-size: 22px;
@@ -610,28 +603,6 @@ body {
   width: 100%;
   align-items: flex-start;
   justify-content: flex-start;
-}
-
-.menu {
-  width: 98%;
-  height: 72px;
-  margin: auto;
-  display: flex;
-  align-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0.1rem;
-  margin: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  transition: all 0.5s;
-  -webkit-transition: all 0.5s;
-  -moz-transition: all 0.5s;
-  -ms-transition: all 0.5s;
-  -o-transition: all 0.5s;
 }
 
 .article {
@@ -653,90 +624,6 @@ body {
   -o-transition: all 0.5s;
 }
 
-.plats {
-  width: 100%;
-  height: 69px;
-  background: rgb(255, 255, 255);
-  border-radius: 15.04px;
-  box-shadow: 0px 4.0114941597px 8.0431032181px 0px rgba(0, 0, 0, 0.1);
-  display: flex;
-  justify-content: flex-end;
-  align-items: end;
-  overflow: hidden;
-  margin-bottom: 10px;
-}
-
-.menu:hover .plats .validation {
-  width: 80px;
-  position: relative;
-  align-items: flex-start;
-}
-
-.menu-txt {
-  height: 75px;
-  width: 100%;
-  padding-left: 10px;
-  display: flex;
-  justify-content: center;
-  margin: auto;
-  flex-direction: column;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.prix-txt {
-  width: 30px;
-  position: fixed;
-  top: 24px;
-  left: -30px;
-  font-weight: 700;
-  font-size: 0.85em;
-}
-
-.accompagnement {
-  position: relative;
-  bottom: 15px;
-  font-weight: 500;
-  font-size: 0.75rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 40px;
-  padding-bottom: 10px;
-}
-
-.titre_menus {
-  position: relative;
-  bottom: 5px;
-  font-weight: 700;
-  font-size: 1em;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 20px;
-}
-
-.entrees, .plates, .desserts {
-  gap: 5px;
-  margin-left: 5px;
-}
-
-.entrees {
-  animation: decalage 2s;
-  -webkit-animation: decalage 2s;
-}
-
-.plates {
-  animation: decalage 2.5s;
-  -webkit-animation: decalage 2.5s;
-}
-
-.desserts {
-  animation: decalage 3s;
-  -webkit-animation: decalage 3s;
-}
-
 .subtitle_lacarte {
   font-family: "Roboto";
   font-size: 16px;
@@ -749,15 +636,6 @@ body {
   height: 23px;
   padding-top: 10px;
   margin-bottom: 10px;
-}
-
-.commander {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .carte {
@@ -819,12 +697,6 @@ body {
     align-items: center;
     margin: auto;
   }
-  .menu {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
-  }
   .subtitle_lacarte {
     width: 5%;
     margin-left: 285px;
@@ -837,11 +709,6 @@ body {
     margin: auto;
     padding: 0;
     padding-right: 20px;
-  }
-  .titre_lacarte_coeur {
-    position: relative;
-    width: 100%;
-    padding: 0;
   }
   .titre_lacarte {
     text-align: center;
@@ -910,23 +777,11 @@ body {
     align-items: center;
     margin: auto;
   }
-  .titre_lacarte_coeur {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-  }
   .titre_lacarte {
     font-size: 25px;
     text-align: center;
     align-items: center;
     justify-content: center;
-  }
-  .menu {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
-    margin: auto;
   }
   .subtitle_lacarte {
     width: 4%;
@@ -991,23 +846,11 @@ body {
     align-items: center;
     margin: auto;
   }
-  .titre_lacarte_coeur {
-    position: relative;
-    width: 100%;
-    margin: auto;
-    padding: 0;
-  }
   .titre_lacarte {
     font-size: 25px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    margin: auto;
-  }
-  .menu {
-    width: 60%;
-    justify-content: center;
-    align-items: center;
     margin: auto;
   }
   .subtitle_lacarte {
@@ -1098,11 +941,11 @@ body {
   }
 }
 .check {
-  width: 50px;
+  width: 40%;
   background-color: rgb(153, 226, 208);
   position: relative;
   height: 40px;
-  padding: 12px 12px;
+  padding: 12px 20px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -1113,7 +956,6 @@ body {
   -ms-transition: all 5s;
   -o-transition: all 5s;
   overflow: hidden;
-  margin-left: 10px;
 }
 
 .validation {
@@ -1321,7 +1163,7 @@ abbr {
     bottom: 60px;
   }
   .gris {
-    left: 63%;
+    left: 67%;
   }
   .gris2 {
     left: 60%;
@@ -1426,6 +1268,13 @@ input {
   margin: auto;
 }
 
+.titre_lacarte_coeur {
+  position: relative;
+  width: 70%;
+  align-items: start;
+  padding-left: 10px;
+}
+
 .lapalette {
   width: 100%;
 }
@@ -1446,7 +1295,81 @@ input {
   width: 100%;
 }
 
-.titre_menus_madagascar {
+.menu {
+  width: 98%;
+  height: 72px;
+  margin: auto;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0.1rem;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -ms-transition: all 0.5s;
+  -o-transition: all 0.5s;
+}
+
+.plats {
+  width: 100%;
+  height: 69px;
+  background: rgb(255, 255, 255);
+  border-radius: 15.04px;
+  box-shadow: 0px 4.0114941597px 8.0431032181px 0px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.menu:hover .plats .validation {
+  width: 80px;
+  position: relative;
+  align-items: flex-start;
+}
+
+.menu-txt {
+  height: 75px;
+  width: 100%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  flex-direction: column;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.prix-txt {
+  width: 30px;
+  position: fixed;
+  top: 24px;
+  left: -30px;
+  font-weight: 700;
+  font-size: 0.85em;
+}
+
+.titre_menus {
+  position: relative;
+  bottom: 5px;
+  font-weight: 700;
+  font-size: 1.01em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 40px;
+}
+
+.titre_menus_canard {
   position: relative;
   bottom: 5px;
   font-weight: 700;
@@ -1454,7 +1377,85 @@ input {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
+  padding-right: 40px;
+}
+
+.titre_menus_madagascar {
+  position: relative;
+  bottom: 5px;
+  font-weight: 700;
+  font-size: 0.99em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 65px;
+}
+
+.accompagnement {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 55px;
+  padding-bottom: 10px;
+}
+
+.accompagnement_ribambelle {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
   padding-right: 45px;
+  padding-bottom: 10px;
+}
+
+.accompagnement-madagascar {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 100px;
+}
+
+.accompagnement_truffe {
+  position: relative;
+  bottom: 15px;
+  font-weight: 500;
+  font-size: 0.75rem;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding-right: 48px;
+  padding-bottom: 10px;
+}
+
+.entrees, .plates, .desserts {
+  gap: 5px;
+  margin-left: 5px;
+}
+
+.entrees {
+  animation: decalage 2s;
+  -webkit-animation: decalage 2s;
+}
+
+.plates {
+  animation: decalage 2.5s;
+  -webkit-animation: decalage 2.5s;
+}
+
+.desserts {
+  animation: decalage 3s;
+  -webkit-animation: decalage 3s;
 }
 
 .img-restaurant {
@@ -1480,13 +1481,53 @@ input {
      object-fit: cover;
 }
 
-.accompagnement-madagascar {
-  position: relative;
-  bottom: 15px;
-  font-weight: 500;
-  font-size: 0.86rem;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  padding-right: 70px;
+.commander {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 767.98px) and (max-width: 1023.98px) {
+  .titre_lacarte_coeur {
+    position: relative;
+    width: 100%;
+    padding: 0;
+  }
+  .menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+@media (min-width: 1023.98px) and (max-width: 1439.98px) {
+  .titre_lacarte_coeur {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
+}
+@media (min-width: 1439.98px) and (max-width: 2000px) {
+  .titre_lacarte_coeur {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    padding: 0;
+  }
+  .menu {
+    width: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+  }
 }/*# sourceMappingURL=main.css.map */
