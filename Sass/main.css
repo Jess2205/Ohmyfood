@@ -1147,7 +1147,7 @@ abbr {
     left: 70%;
   }
   .gris3 {
-    left: 68%;
+    left: 69%;
   }
   .gris2 {
     left: 65%;
@@ -1166,10 +1166,10 @@ abbr {
     left: 67%;
   }
   .gris2 {
-    left: 60%;
+    left: 64%;
   }
   .gris3 {
-    left: 62%;
+    left: 66%;
   }
 }
 @media (min-width: 1439.98px) and (max-width: 2000px) {
@@ -1187,7 +1187,7 @@ abbr {
     bottom: 40px;
   }
   .gris3 {
-    left: 62%;
+    left: 61%;
     bottom: 40px;
   }
 }
