@@ -9,12 +9,11 @@
     display: flex;
     margin: 0;
     transition: all 0.5s;
-    -webkit-transition:all 5s;
-    -moz-transition:all 5s;
-    -ms-transition:all 5s;
-    -o-transition:all 5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
     overflow: hidden;
-   
 }
   
 .validation {
@@ -32,7 +31,7 @@
   
 .validation:hover {
     transform:translateX(0);
-    transition-duration: 5s;
+    transition-duration: 0.5s;
     transition-delay: 0s;
     -webkit-transform:translateX(0px);
     -moz-transform:translateX(0px);
